@@ -1,0 +1,28 @@
+---
+title: "Análisis de datos"
+description: |
+  Material del minicurso sobre análisis de datos con R y Python.
+date: 2024-06-10
+date-modified: last-modified
+author:
+  - name:
+      given: Juan Camilo
+      family: Arboleda Rivera
+    email: juan.arboleda2@udea.edu.co
+    affiliation:
+      - name: Universidad de Antioquia
+        city: Medellín
+        country: Colombia
+    orcid: 0000-0002-0030-056X
+license: "CC BY"
+citation:
+  url: https://biologia-computacional.github.io/data-analysis
+---
+
+En esta página encontrarás el material del minicurso de análisis de datos
+con R y Python.
+
+## Diapositivas
+
+0. [Introducción](0-intro/index.qmd)
+1. [Análisis de datos en R](1-R/index.qmd)
