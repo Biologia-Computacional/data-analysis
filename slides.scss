@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+$font-family-sans-serif: "Ysabeau";
 /*-- scss:defaults --*/
 
 $link-color: #42affa;
-$code-block-bg: #d0d0ee;
+$code-block-bg: #f2f5f6;
 $code-bg: #eef;
 
 /*-- scss:rules --*/
@@ -15,4 +18,5 @@ $code-bg: #eef;
 	font-family: monospace;
 	font-size: 2rem;
 	border-radius: 0.3rem;
+  line-height: 1.1em;
 }
