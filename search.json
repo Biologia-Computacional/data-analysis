@@ -18,7 +18,7 @@
     "href": "material-adicional/recursos-adicionales.html",
     "title": "Análisis de datos",
     "section": "",
-    "text": "Libro Python for Data Analysis\nProgramación en R\n\nLibro principal el mejor de todos los tiempos: - R4 Data Science\n\nAdvanced R, de Wickham\nHappy Git de Jennifer Bryan\nrenv\ntidystats: Conjunto de paquetes para hacer pruebas estadísticas.\neasystats: Más cosas de estadística muy chévere.\nExtensiones asombrosas para ggplot2\nGalería con gráficos muy bonitos\n\n\n\nCapas de ggplot2\n\n\n\nBuscar más información sobre estas capas de ggplot2 y cómo funcionan. En esta página hay más información.\nBuscar también “la gramática de los gráficos”.\npkgdown: Sistema para generar paquetes de R."
+    "text": "Libro Python for Data Analysis\nProgramación en R\n\nLibro principal el mejor de todos los tiempos: - R4 Data Science\n\nAdvanced R, de Wickham\nHappy Git de Jennifer Bryan\nrenv\ntidystats: Conjunto de paquetes para hacer pruebas estadísticas.\neasystats: Más cosas de estadística muy chévere.\nExtensiones asombrosas para ggplot2\nGalería con gráficos muy bonitos\n\n\n\nCapas de ggplot2\n\n\n\nBuscar más información sobre estas capas de ggplot2 y cómo funcionan. En esta página hay más información.\nBuscar también “la gramática de los gráficos”.\npkgdown: Sistema para generar paquetes de R.\nEstructura de un proyecto de Biología Computacional\nMuy buen tutorial sobre R en español"
   },
   {
     "objectID": "material-adicional/ideas.html",
@@ -74,7 +74,7 @@
     "href": "1-R/index.html#datos-tidy-vs-untidy",
     "title": "Análisis de datos en R",
     "section": "Datos Tidy vs Untidy",
-    "text": "Datos Tidy vs Untidy\n\n\n\n\n\n\n\n\n\n\n\n\n\nLongitud hoja\nAncho hoja\nLocalización\nDistancia al árbol más cercano\n0-10 inflorescencias\n10-20 inflorescencias\n\n\n\n\n76\n2 cm\n6.26508, -75.56890\n460\nSí\nNo\n\n\n6.2\n3.1 cm\n6.26508, -75.56890\n460\nSí\nNo\n\n\n51 mm\n3.7 cm\n6° 15’ 53.424” N, 75° 34’ 5.772” W\n100\nNo\nSí\n\n\n7.4\n4.1 cm\n6° 15’ 53.424” N, 75° 34’ 5.772” W\n100\nNo\nSí\n\n\n5.8\n2.9 cm\n6.26513, -75.56926\n320\nNo\nSí\n\n\n81\n3.3 cm\n6.26513, -75.56926\n320\nNo\nSí"
+    "text": "Datos Tidy vs Untidy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLongitud hoja\nAncho hoja\nLocalización\nDistancia al árbol más cercano\n0-10 inflorescencias\n10-20 inflorescencias\n\n\n\n\n76\n2 cm\n6.26508, -75.56890\n460\nSí\nNo\n\n\n6.2\n3.1 cm\n6.26508, -75.56890\n460\nSí\nNo\n\n\n51 mm\n3.7 cm\n6° 15’ 53.424” N, 75° 34’ 5.772” W\n100\nNo\nSí\n\n\n7.4\n4.1 cm\n6° 15’ 53.424” N, 75° 34’ 5.772” W\n100\nNo\nSí\n\n\n5.8\n2.9 cm\n6.26513, -75.56926\n320\nNo\nSí\n\n\n81\n3.3 cm\n6.26513, -75.56926\n320\nNo\nSí\n\n\n\n\n\n\n¿Qué problemas tienen estos datos?"
   },
   {
     "objectID": "1-R/index.html#datos-bien-ordenados",
@@ -98,45 +98,143 @@
     "text": "¿Por qué usar formatos abiertos y software libre de análisis de datos?\n\n¿Se están cambiando los nombres de genes humanos por culpa de Excel?"
   },
   {
+    "objectID": "1-R/index.html#interfaz-de-rstudio",
+    "href": "1-R/index.html#interfaz-de-rstudio",
+    "title": "Análisis de datos en R",
+    "section": "Interfaz de RStudio",
+    "text": "Interfaz de RStudio"
+  },
+  {
+    "objectID": "1-R/index.html#ejecutar-código",
+    "href": "1-R/index.html#ejecutar-código",
+    "title": "Análisis de datos en R",
+    "section": "Ejecutar código",
+    "text": "Ejecutar código\n\nEjecutar código es muy sencillo:\n\n1 + 2\n\n[1] 3\n\n2 * 4\n\n[1] 8\n\n27 / 3\n\n[1] 9\n\n3**2\n\n[1] 9\n\n\n\nSi copiamos código en el Editor de RStudio, lo podemos ejecutar poniendo el cursor sobre la línea que queramos ejecutar y apretamos Ctrl + Enter para ejecutarlo."
+  },
+  {
+    "objectID": "1-R/index.html#usar-funciones",
+    "href": "1-R/index.html#usar-funciones",
+    "title": "Análisis de datos en R",
+    "section": "Usar funciones",
+    "text": "Usar funciones\nLas funciones se usan con la siguiente sintaxis:\nnombre_de_la_funcion(argumento1 = valor1, argumento2 = valor2, ...)\n\n\nPor ejemplo:\n\nseq(from = 1, to = 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\nEsto es lo mismo que:\n\nseq(1, 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
     "objectID": "1-R/index.html#el-tidyverse",
     "href": "1-R/index.html#el-tidyverse",
     "title": "Análisis de datos en R",
     "section": "El Tidyverse",
-    "text": "El Tidyverse\n\nPara instalar el Tidyverse ejecutar el siguiente comando en R:\n# Install from CRAN\ninstall.packages(\"tidyverse\")"
+    "text": "El Tidyverse\n\nPara instalar el Tidyverse ejecutar el siguiente comando en la consola de R:\n# Install from CRAN\ninstall.packages(\"tidyverse\")"
   },
   {
-    "objectID": "1-R/index.html#cargar-paquetes-en-r-y-ejecutar-código",
-    "href": "1-R/index.html#cargar-paquetes-en-r-y-ejecutar-código",
+    "objectID": "1-R/index.html#cargar-paquetes-en-r",
+    "href": "1-R/index.html#cargar-paquetes-en-r",
     "title": "Análisis de datos en R",
-    "section": "Cargar paquetes en R y ejecutar código",
-    "text": "Cargar paquetes en R y ejecutar código\nAl instalar un paquete ya lo tendremos en nuestro computador, pero si queremos usarlo tendremos que cargarlo con la función library():\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n¿Qué creen que sea eso de Conflicts?\n\nEjecutar código es muy sencillo:\n\n1 + 2\n\n[1] 3\n\n\nPara usar una función especificando el paquete de procedencia usamos el formato paquete::funcion()."
+    "section": "Cargar paquetes en R",
+    "text": "Cargar paquetes en R\nAl instalar un paquete ya lo tendremos en nuestro computador, pero siempre que queramos usarlo tendremos que cargarlo con la función library():\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\n¿Qué creen que sea eso de Conflicts?\nPara usar una función especificando el paquete de procedencia usamos el formato paquete::funcion()."
+  },
+  {
+    "objectID": "1-R/index.html#obtener-ayuda",
+    "href": "1-R/index.html#obtener-ayuda",
+    "title": "Análisis de datos en R",
+    "section": "Obtener ayuda",
+    "text": "Obtener ayuda\n\nEn la consola de R podemos usar el símbolo ? para obtener ayuda sobre las cosas. Por ejemplo, si queremos saber qué hace la función mean, ejecutamos:\n?mean\n\nMuchos paquetes tienen documentación adicional o tutoriales llamados vignettes (viñetas), para ver esta documentación ejecutamos, por ejemplo:\nvignette(\"dplyr\") # Ver la viñeta del paquete dplyr"
+  },
+  {
+    "objectID": "1-R/index.html#diagnóstico-de-problemas",
+    "href": "1-R/index.html#diagnóstico-de-problemas",
+    "title": "Análisis de datos en R",
+    "section": "Diagnóstico de problemas",
+    "text": "Diagnóstico de problemas\n\nEl editor resalta los errores de sintaxis con una línea roja serpenteante bajo el código y una cruz en la barra lateral1:\n\nPara ver el problema ponemos el mouse sobre la cruz:\n\nR Para Ciencia de Datos"
+  },
+  {
+    "objectID": "1-R/index.html#la-importancia-de-crear-un-proyecto",
+    "href": "1-R/index.html#la-importancia-de-crear-un-proyecto",
+    "title": "Análisis de datos en R",
+    "section": "La importancia de crear un Proyecto",
+    "text": "La importancia de crear un Proyecto\n\n\nUn Proyecto es simplemente una carpeta para mantener todos los archivos asociados con un proyecto dado (datos, scripts, resultados, figuras) en el mismo lugar. Ventajas de hacer esto:\n\nReproducibilidad\nPortabilidad\nOrganización\nSe puede realizar fácilmente Control de Versiones"
+  },
+  {
+    "objectID": "1-R/index.html#reproducibilidad",
+    "href": "1-R/index.html#reproducibilidad",
+    "title": "Análisis de datos en R",
+    "section": "Reproducibilidad",
+    "text": "Reproducibilidad\nSolo con los scripts y los datos iniciales, cualquier persona debería ser capaz de reproducir tus análisis. Para fomentar el uso de scripts y que RStudio no recuerde información adicional sobre el ambiente de trabajo, es útil ajustar la configuración:"
+  },
+  {
+    "objectID": "1-R/index.html#renombremos-las-columnas",
+    "href": "1-R/index.html#renombremos-las-columnas",
+    "title": "Análisis de datos en R",
+    "section": "Renombremos las columnas",
+    "text": "Renombremos las columnas"
   },
   {
     "objectID": "1-R/index.html#histogramas",
     "href": "1-R/index.html#histogramas",
     "title": "Análisis de datos en R",
     "section": "Histogramas",
-    "text": "Histogramas\n\nggplot(hojas) +\n  geom_histogram(mapping = aes(x = longitud_hoja))"
+    "text": "Histogramas\n\nggplot(hojas) +\n  geom_histogram(mapping = aes(x = longitud))"
   },
   {
     "objectID": "1-R/index.html#boxplot-o-diagrama-de-caja",
     "href": "1-R/index.html#boxplot-o-diagrama-de-caja",
     "title": "Análisis de datos en R",
     "section": "Boxplot o diagrama de caja",
-    "text": "Boxplot o diagrama de caja"
+    "text": "Boxplot o diagrama de caja\n\n\nggplot(hojas) +\n  geom_boxplot(mapping = aes(x = longitud))"
   },
   {
     "objectID": "1-R/index.html#gráficos-de-dispersión",
     "href": "1-R/index.html#gráficos-de-dispersión",
     "title": "Análisis de datos en R",
     "section": "Gráficos de dispersión",
-    "text": "Gráficos de dispersión\n\nggplot(data = hojas) +\n  geom_point(mapping = aes(x = longitud_hoja, y = ancho_hoja, color = científico))"
+    "text": "Gráficos de dispersión\n\nggplot(data = hojas) +\n  geom_point(mapping = aes(x = longitud, y = ancho, color = Científico))"
   },
   {
     "objectID": "1-R/index.html#todavía-más-gráficos",
     "href": "1-R/index.html#todavía-más-gráficos",
     "title": "Análisis de datos en R",
     "section": "Todavía más gráficos",
-    "text": "Todavía más gráficos\nThe R Graph Gallery\n\n\n\nAnálisis de datos. Juan Camilo Arboleda Rivera, UdeA, 2024."
+    "text": "Todavía más gráficos\nThe R Graph Gallery"
+  },
+  {
+    "objectID": "1-R/index.html#población-vs.-muestra",
+    "href": "1-R/index.html#población-vs.-muestra",
+    "title": "Análisis de datos en R",
+    "section": "Población vs. muestra",
+    "text": "Población vs. muestra"
+  },
+  {
+    "objectID": "1-R/index.html#qué-es-ser-normal",
+    "href": "1-R/index.html#qué-es-ser-normal",
+    "title": "Análisis de datos en R",
+    "section": "¿Qué es ser normal?",
+    "text": "¿Qué es ser normal?"
+  },
+  {
+    "objectID": "1-R/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
+    "href": "1-R/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
+    "title": "Análisis de datos en R",
+    "section": "¿Son tus datos normales, o les gusta madrugar?",
+    "text": "¿Son tus datos normales, o les gusta madrugar?\n\nhojas |&gt; shapiro_test(longitud)"
+  },
+  {
+    "objectID": "1-R/index.html#outliers-datos-atípicos",
+    "href": "1-R/index.html#outliers-datos-atípicos",
+    "title": "Análisis de datos en R",
+    "section": "Outliers (Datos atípicos)",
+    "text": "Outliers (Datos atípicos)"
+  },
+  {
+    "objectID": "1-R/index.html#prueba-t-de-student",
+    "href": "1-R/index.html#prueba-t-de-student",
+    "title": "Análisis de datos en R",
+    "section": "Prueba t de Student",
+    "text": "Prueba t de Student\n\nSirve para saber si dos medias son diferentes.\n\n\n\n\n\n\nExiste gracias a la cerveza."
+  },
+  {
+    "objectID": "1-R/index.html#anova-análisis-de-varianza",
+    "href": "1-R/index.html#anova-análisis-de-varianza",
+    "title": "Análisis de datos en R",
+    "section": "ANOVA (Análisis de Varianza)",
+    "text": "ANOVA (Análisis de Varianza)\n\nComo una prueba t de Student pero cuando se comparan las medias entre más de dos grupos."
   }
 ]

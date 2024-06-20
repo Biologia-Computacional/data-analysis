@@ -443,6 +443,8 @@ Juan Camilo Arboleda Rivera
 <img data-src="https://es.r4ds.hadley.nz/diagrams_w_text_as_path/es/data-science.svg" class="r-stretch"></section>
 <section id="datos-tidy-vs-untidy" class="slide level2">
 <h2>Datos Tidy vs Untidy</h2>
+<p><br>
+</p>
 <div class="cell">
 <div class="cell-output-display">
 <table>
@@ -517,6 +519,8 @@ Juan Camilo Arboleda Rivera
 </table>
 </div>
 </div>
+<p><br>
+¿Qué problemas tienen estos datos?</p>
 </section>
 <section id="datos-bien-ordenados" class="slide level2">
 <h2>Datos bien ordenados</h2>
@@ -554,18 +558,100 @@ Juan Camilo Arboleda Rivera
 <h1>R</h1>
 
 </section>
+<section id="interfaz-de-rstudio" class="slide level2">
+<h2>Interfaz de RStudio</h2>
+
+<img data-src="https://r4ds.hadley.nz/diagrams/rstudio/script.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="ejecutar-código" class="slide level2">
+<h2>Ejecutar código</h2>
+<p><br>
+Ejecutar código es muy sencillo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="dv">27</span> <span class="sc">/</span> <span class="dv">3</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">**</span><span class="dv">2</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9</code></pre>
+</div>
+</div>
+<p><br>
+Si copiamos código en el Editor de RStudio, lo podemos ejecutar poniendo el cursor sobre la línea que queramos ejecutar y apretamos <kbd>Ctrl</kbd> + <kbd>Enter</kbd> para ejecutarlo.</p>
+</section>
+<section class="slide level2">
+
+<p>Podemos crear nuevos objetos con el operador de asignación <code>&lt;-</code>:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br>
+Se pueden <strong>c</strong>ombinar varios elementos en un vector con <code>c()</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-hidden="true" tabindex="-1"></a>primos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">13</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<p><br>
+Y se pueden aplicar operaciones a estos vectores:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a aria-hidden="true" tabindex="-1"></a>primos <span class="sc">*</span> <span class="dv">2</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  4  6 10 14 22 26</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-hidden="true" tabindex="-1"></a>primos <span class="sc">-</span> <span class="dv">1</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  2  4  6 10 12</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="usar-funciones" class="slide level2">
+<h2>Usar funciones</h2>
+<p>Las funciones se usan con la siguiente sintaxis:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">nombre_de_la_funcion</span>(<span class="at">argumento1 =</span> valor1, <span class="at">argumento2 =</span> valor2, ...)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br>
+Por ejemplo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br>
+Esto es lo mismo que:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div>
+</section>
 <section id="el-tidyverse" class="slide level2">
 <h2>El Tidyverse</h2>
 
-<img data-src="https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Para instalar el Tidyverse ejecutar el siguiente comando en R:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Install from CRAN</span></span>
-<span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<img data-src="https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Para instalar el Tidyverse ejecutar el siguiente comando en la consola de R:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Install from CRAN</span></span>
+<span id="cb22-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="cargar-paquetes-en-r-y-ejecutar-código" class="slide level2">
-<h2>Cargar paquetes en R y ejecutar código</h2>
-<p>Al instalar un paquete ya lo tendremos en nuestro computador, pero si queremos usarlo tendremos que cargarlo con la función <code>library()</code>:</p>
+<section id="cargar-paquetes-en-r" class="slide level2">
+<h2>Cargar paquetes en R</h2>
+<p>Al instalar un paquete ya lo tendremos en nuestro computador, pero siempre que queramos usarlo tendremos que cargarlo con la función <code>library()</code>:<br>
+<br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
@@ -579,47 +665,85 @@ Juan Camilo Arboleda Rivera
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
 </div>
-<p>¿Qué creen que sea eso de <code>Conflicts</code>?</p>
 <div class="fragment">
-<p>Ejecutar código es muy sencillo:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3</code></pre>
-</div>
-</div>
+<p>¿Qué creen que sea eso de <code>Conflicts</code>?</p>
 <p>Para usar una función especificando el paquete de procedencia usamos el formato <code>paquete::funcion()</code>.</p>
 </div>
-</section></section>
+</section>
+<section id="obtener-ayuda" class="slide level2">
+<h2>Obtener ayuda</h2>
+<p><br>
+En la consola de R podemos usar el símbolo <code>?</code> para obtener ayuda sobre las cosas. Por ejemplo, si queremos saber qué hace la función <code>mean</code>, ejecutamos:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a aria-hidden="true" tabindex="-1"></a>?mean</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+Muchos paquetes tienen documentación adicional o tutoriales llamados <em>vignettes</em> (viñetas), para ver esta documentación ejecutamos, por ejemplo:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"dplyr"</span>) <span class="co"># Ver la viñeta del paquete dplyr</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="diagnóstico-de-problemas" class="slide level2">
+<h2>Diagnóstico de problemas</h2>
+<p><br>
+El editor resalta los errores de sintaxis con una línea roja serpenteante bajo el código y una cruz en la barra lateral<sup>1</sup>:</p>
+<p><img data-src="https://es.r4ds.hadley.nz/screenshots/rstudio-diagnostic.png"></p>
+<p>Para ver el problema ponemos el mouse sobre la cruz:</p>
+<p><img data-src="https://es.r4ds.hadley.nz/screenshots/rstudio-diagnostic-tip.png"></p>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://es.r4ds.hadley.nz/06-workflow-scripts.html#diagn%C3%B3sticos-de-rstudio">R Para Ciencia de Datos</a></p></li></ol></aside></section>
+<section id="la-importancia-de-crear-un-proyecto" class="slide level2">
+<h2>La importancia de crear un Proyecto</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Un Proyecto es simplemente una carpeta para mantener todos los archivos asociados con un proyecto dado (datos, scripts, resultados, figuras) en el mismo lugar. Ventajas de hacer esto:</p>
+<ul>
+<li>Reproducibilidad</li>
+<li>Portabilidad</li>
+<li>Organización</li>
+<li>Se puede realizar fácilmente <a href="https://nesper94.github.io/teaching/git/git.html">Control de Versiones</a></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://raw.githubusercontent.com/martinctc/blog/master/images/RPROJECT_2000dpi.png"></p>
+</div>
+</div>
+</section>
+<section id="reproducibilidad" class="slide level2">
+<h2>Reproducibilidad</h2>
+<p>Solo con los scripts y los datos iniciales, cualquier persona debería ser capaz de reproducir tus análisis. Para fomentar el uso de scripts y que RStudio no recuerde información adicional sobre el ambiente de trabajo, es útil ajustar la configuración:</p>
+
+<img data-src="https://r4ds.hadley.nz/diagrams/rstudio/clean-slate.png" class="r-stretch"></section></section>
+<section>
 <section id="importando-datos" class="title-slide slide level1 center">
 <h1>Importando datos</h1>
+<p><br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">"../datos/hojas.tsv"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">"../datos/hojas.tsv"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Observen que usamos la <strong>ruta relativa</strong>. ¿Por qué esto es importante?</p>
 </section>
-
+<section id="renombremos-las-columnas" class="slide level2">
+<h2>Renombremos las columnas</h2>
+</section></section>
 <section>
-<section id="visualización-de-datos" class="title-slide slide level1 center">
-<h1><a href="https://es.r4ds.hadley.nz/03-visualize.html">Visualización de datos</a></h1>
+<section id="visualización-de-datos-con-ggplot2" class="title-slide slide level1 center">
+<h1><a href="https://es.r4ds.hadley.nz/03-visualize.html">Visualización de datos con ggplot2</a></h1>
 
 <img data-src="https://metricsf20.classes.ryansafner.com/images/gglayers.png" class="r-stretch quarto-figure-center"><p class="caption">Capas de ggplot2</p></section>
 <section id="histogramas" class="slide level2">
 <h2>Histogramas</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
-<span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud_hoja))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
+<span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
 <section id="boxplot-o-diagrama-de-caja" class="slide level2 scrollable">
 <h2>Boxplot o diagrama de caja</h2>
 <p><img data-src="https://miro.medium.com/max/9000/1*2c21SkzJMf3frPXPAR_gZA.png"></p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
+<span id="cb29-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -628,16 +752,61 @@ Juan Camilo Arboleda Rivera
 <section id="gráficos-de-dispersión" class="slide level2">
 <h2>Gráficos de dispersión</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
-<span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud_hoja, <span class="at">y =</span> ancho_hoja, <span class="at">color =</span> científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
+<span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="index_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
 <section id="todavía-más-gráficos" class="slide level2">
 <h2>Todavía más gráficos</h2>
 <p><a href="https://r-graph-gallery.com">The R Graph Gallery</a></p>
+</section></section>
+<section>
+<section id="estadística" class="title-slide slide level1 center">
+<h1>Estadística</h1>
 
-<div class="quarto-auto-generated-content">
+</section>
+<section id="población-vs.-muestra" class="slide level2">
+<h2>Población vs.&nbsp;muestra</h2>
+
+<img data-src="https://gitlab.com/Nesper94/diapositivas-genetica/-/raw/main/unidad-3/u3-2-gen%C3%A9tica-mendeliana/imgs/poblaci%C3%B3n-vs-muestra.jpg?ref_type=heads" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="qué-es-ser-normal" class="slide level2">
+<h2>¿Qué es ser normal?</h2>
+
+<img data-src="https://miro.medium.com/v2/resize:fit:550/1*62UHx2o44DhHUhSua5q6jQ.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="son-tus-datos-normales-o-les-gusta-madrugar" class="slide level2">
+<h2>¿Son tus datos normales, o les gusta madrugar?</h2>
+
+<img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmwDD2jhdMEbqBKLeNx_iOjE-OPjTwqT7Vg&amp;s.png" class="quarto-figure quarto-figure-center r-stretch" width="400"><div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span> <span class="fu">shapiro_test</span>(longitud)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="outliers-datos-atípicos" class="slide level2">
+<h2>Outliers (Datos atípicos)</h2>
+
+<img data-src="https://i.pinimg.com/originals/17/e6/a0/17e6a012beb92be590a2b9f0c96c201c.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:30.0%"></section>
+<section id="prueba-t-de-student" class="slide level2">
+<h2>Prueba t de Student</h2>
+<ul>
+<li>Sirve para saber si dos medias son diferentes.</li>
+</ul>
+<div class="fragment">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Socken_farbig.jpeg/566px-Socken_farbig.jpeg"></p>
+</div>
+<div class="fragment">
+<ul>
+<li><a href="https://vivaelsoftwarelibre.com/por-que-se-llama-t-de-student/">Existe gracias a la cerveza.</a></li>
+</ul>
+</div>
+</section>
+<section id="anova-análisis-de-varianza" class="slide level2">
+<h2>ANOVA (Análisis de Varianza)</h2>
+
+<img data-src="https://r.qcbs.ca/workshop04/book-en/book-en_files/figure-html/unnamed-chunk-44-1.png" class="r-stretch"><p>Como una prueba t de Student pero cuando se comparan las medias entre más de dos grupos.</p>
+</section>
+<section class="slide level2">
+
+
+
+<img data-src="https://datatab.es/assets/tutorial/anova/an%C3%A1lisis_de_varianza.png" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="../index.html">Análisis de datos</a>. Juan Camilo Arboleda Rivera, UdeA, 2024.</p>
 </div>
@@ -679,7 +848,7 @@ Juan Camilo Arboleda Rivera
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"e84c9a661f3f1e42","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"d3726726a3964fe5","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
