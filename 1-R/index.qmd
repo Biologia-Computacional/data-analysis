@@ -48,12 +48,15 @@ sudo dpkg -i rstudio-2024.04.1-748-amd64.deb
 
 ## Datos Tidy vs Untidy
 
+\
 ```{python}
 import pandas as pd
 from IPython.display import Markdown
 df = pd.read_csv('../datos/untidy.tsv', sep='\t')
 Markdown(df.to_markdown(index=False))
 ```
+\
+¿Qué problemas tienen estos datos?
 
 ## Datos bien ordenados
 
@@ -91,43 +94,157 @@ Formato propietario:
 
 # R
 
+## Interfaz de RStudio
+
+![](https://r4ds.hadley.nz/diagrams/rstudio/script.png){fig-align="center"}
+
+## Ejecutar código
+\
+Ejecutar código es muy sencillo:
+```{r, eval = TRUE}
+#| echo: true
+1 + 2
+2 * 4
+27 / 3
+3**2
+```
+\
+Si copiamos código en el Editor de RStudio, lo podemos ejecutar poniendo el
+cursor sobre la línea que queramos ejecutar y apretamos <kbd>Ctrl</kbd> +
+<kbd>Enter</kbd> para ejecutarlo.
+
+---
+
+Podemos crear nuevos objetos con el operador de asignación `<-`:
+```R
+x <- 3 * 4
+```
+. . .
+
+\
+Se pueden **c**ombinar varios elementos en un vector con `c()`:
+```{r, echo=TRUE}
+primos <- c(2, 3, 5, 7, 11, 13)
+```
+. . .
+
+\
+Y se pueden aplicar operaciones a estos vectores:
+```{r, echo=TRUE}
+primos * 2
+primos - 1
+```
+
+## Usar funciones
+
+Las funciones se usan con la siguiente sintaxis:
+```R
+nombre_de_la_funcion(argumento1 = valor1, argumento2 = valor2, ...)
+```
+. . .
+
+\
+Por ejemplo:
+```{r, echo=TRUE}
+seq(from = 1, to = 10)
+```
+. . .
+
+\
+Esto es lo mismo que:
+```{r, echo=TRUE}
+seq(1, 10)
+```
+
 ## El Tidyverse
 
 ![](https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png){fig-align="center"}
 
-Para instalar el Tidyverse ejecutar el siguiente comando en R:
+Para instalar el Tidyverse ejecutar el siguiente comando en la consola de R:
 ```R
 # Install from CRAN
 install.packages("tidyverse")
 ```
 
-## Cargar paquetes en R y ejecutar código
+## Cargar paquetes en R
 
-Al instalar un paquete ya lo tendremos en nuestro computador, pero si
-queremos usarlo tendremos que cargarlo con la función `library()`:
-
+Al instalar un paquete ya lo tendremos en nuestro computador, pero siempre
+que queramos usarlo tendremos que cargarlo con la función `library()`:\
+\
 ```{r}
 #| echo: true
 #| warning: true
 
 library(tidyverse)
 ```
-
-¿Qué creen que sea eso de `Conflicts`?
-
 . . .
 
-Ejecutar código es muy sencillo:
-```{r, eval = TRUE}
-#| echo: true
-1 + 2
-```
+¿Qué creen que sea eso de `Conflicts`?
 
 Para usar una función especificando el paquete de procedencia usamos el
 formato `paquete::funcion()`.
 
-# Importando datos
+## Obtener ayuda
+\
+En la consola de R podemos usar el símbolo `?` para obtener ayuda sobre las
+cosas. Por ejemplo, si queremos saber qué hace la función `mean`, ejecutamos:
 
+```R
+?mean
+```
+\
+Muchos paquetes tienen documentación adicional o tutoriales llamados
+*vignettes* (viñetas), para ver esta documentación ejecutamos, por ejemplo:
+
+```R
+vignette("dplyr") # Ver la viñeta del paquete dplyr
+```
+
+## Diagnóstico de problemas
+\
+El editor resalta los errores de sintaxis con una línea roja serpenteante
+bajo el código y una cruz en la barra lateral^[[R Para Ciencia de
+Datos](https://es.r4ds.hadley.nz/06-workflow-scripts.html#diagn%C3%B3sticos-de-rstudio)]:
+
+![](https://es.r4ds.hadley.nz/screenshots/rstudio-diagnostic.png)
+
+Para ver el problema ponemos el mouse sobre la cruz:
+
+![](https://es.r4ds.hadley.nz/screenshots/rstudio-diagnostic-tip.png)
+
+## La importancia de crear un Proyecto
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Un Proyecto es simplemente una carpeta para mantener todos los archivos
+asociados con un proyecto dado (datos, scripts, resultados, figuras) en el
+mismo lugar. Ventajas de hacer esto:
+
+- Reproducibilidad
+- Portabilidad
+- Organización
+- Se puede realizar fácilmente [Control de
+  Versiones](https://nesper94.github.io/teaching/git/git.html)
+:::
+
+::: {.column width="40%"}
+![](https://raw.githubusercontent.com/martinctc/blog/master/images/RPROJECT_2000dpi.png)
+:::
+
+::::
+
+## Reproducibilidad
+
+Solo con los scripts y los datos iniciales, cualquier persona debería ser
+capaz de reproducir tus análisis. Para fomentar el uso de scripts y que
+RStudio no recuerde información adicional sobre el ambiente de trabajo, es
+útil ajustar la configuración:
+
+![](https://r4ds.hadley.nz/diagrams/rstudio/clean-slate.png)
+
+# Importando datos
+\
 ```{r}
 #| echo: true
 hojas <- read_tsv("../datos/hojas.tsv")
@@ -135,7 +252,18 @@ hojas <- read_tsv("../datos/hojas.tsv")
 
 Observen que usamos la **ruta relativa**. ¿Por qué esto es importante?
 
-# [Visualización de datos](https://es.r4ds.hadley.nz/03-visualize.html)
+## Renombremos las columnas
+
+```{r}
+hojas <- hojas |>
+  rename(
+    id_planta = 'ID planta',
+    longitud = 'Longitud hoja (cm)',
+    ancho = 'Ancho hoja (cm)'
+    )
+```
+
+# [Visualización de datos con ggplot2](https://es.r4ds.hadley.nz/03-visualize.html)
 
 ![Capas de
   ggplot2](https://metricsf20.classes.ryansafner.com/images/gglayers.png)
@@ -146,16 +274,16 @@ Observen que usamos la **ruta relativa**. ¿Por qué esto es importante?
 #| echo: true
 
 ggplot(hojas) +
-  geom_histogram(mapping = aes(x = longitud_hoja))
+  geom_histogram(mapping = aes(x = longitud))
 ```
 
 ## Boxplot o diagrama de caja {.scrollable}
 
 ![](https://miro.medium.com/max/9000/1*2c21SkzJMf3frPXPAR_gZA.png)
 
-```{r}
+```{r, echo=TRUE}
 ggplot(hojas) +
-  geom_boxplot(mapping = aes(x = longitud_hoja))
+  geom_boxplot(mapping = aes(x = longitud))
 ```
 
 ## Gráficos de dispersión
@@ -164,9 +292,54 @@ ggplot(hojas) +
 #| echo: true
 
 ggplot(data = hojas) +
-  geom_point(mapping = aes(x = longitud_hoja, y = ancho_hoja, color = científico))
+  geom_point(mapping = aes(x = longitud, y = ancho, color = Científico))
 ```
 
 ## Todavía más gráficos
 
 [The R Graph Gallery](https://r-graph-gallery.com)
+
+# Estadística
+
+## Población vs. muestra
+
+![](https://gitlab.com/Nesper94/diapositivas-genetica/-/raw/main/unidad-3/u3-2-gen%C3%A9tica-mendeliana/imgs/poblaci%C3%B3n-vs-muestra.jpg?ref_type=heads){fig-align="center"}
+
+## ¿Qué es ser normal?
+
+![](https://miro.medium.com/v2/resize:fit:550/1*62UHx2o44DhHUhSua5q6jQ.jpeg){fig-align="center"}
+
+## ¿Son tus datos normales, o les gusta madrugar?
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmwDD2jhdMEbqBKLeNx_iOjE-OPjTwqT7Vg&s){width=400 fig-align="center"}
+
+```R
+hojas |> shapiro_test(longitud)
+```
+
+## Outliers (Datos atípicos)
+
+![](https://i.pinimg.com/originals/17/e6/a0/17e6a012beb92be590a2b9f0c96c201c.jpg){fig-align="center" width=30%}
+
+## Prueba t de Student
+
+- Sirve para saber si dos medias son diferentes.
+
+. . .
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Socken_farbig.jpeg/566px-Socken_farbig.jpeg)
+
+. . .
+
+- [Existe gracias a la cerveza.](https://vivaelsoftwarelibre.com/por-que-se-llama-t-de-student/)
+
+## ANOVA (Análisis de Varianza)
+
+![](https://r.qcbs.ca/workshop04/book-en/book-en_files/figure-html/unnamed-chunk-44-1.png)
+
+Como una prueba t de Student pero cuando se comparan las medias entre más de
+dos grupos.
+
+---
+
+![](https://datatab.es/assets/tutorial/anova/an%C3%A1lisis_de_varianza.png)

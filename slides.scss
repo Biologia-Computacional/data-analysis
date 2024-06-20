@@ -20,3 +20,56 @@ $code-bg: #eef;
 	border-radius: 0.3rem;
   line-height: 1.1em;
 }
+
+// Estilo para teclas
+// Tomado de https://dylanatsmith.com/wrote/styling-the-kbd-element
+// y de https://codepen.io/Harrix/pen/pZZZxg
+
+kbd {
+  // Round off the corners like physical keys have
+  border-radius: 0.25rem;
+
+  // A sharp shadow (with no blur) really gives
+  // the old school keyboard look
+  box-shadow: 0 2px 0 1px var(--kbd-color-border);
+
+  // Remove the text cursor — totally optional
+  // but I wanted it for my hover effect
+  cursor: default;
+
+  // If we do all this with the default font size
+  // (mine is 18px on desktop) it’ll look massive
+  // and bump into lines above and below
+  font-size: 0.75em;
+
+  // Remove any extra space so I can accurately tweak the padding
+  line-height: 1;
+
+  // These two lines pull the whole element up now that they’re
+  // bottom-heavy due to the `box-shadow`. This looks better
+  // against the cap height of regular paragraph text.
+  position: relative;
+  top: -1px;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: monospace, sans-serif;
+  vertical-align: baseline;
+  background: transparent;
+  background-color: #eeeeff;
+  border-color: #e6e6e6 #bebebe #bebebe #e6e6e6;
+  border-style: solid;
+  border-width: 1px 3px 4px;
+  padding: 0 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  // This is my favourite part of the whole thing. The key gets
+  // “pushed” down and the shadow gets reduced so it looks like
+  // it might when typing on a physical keyboard.
+  &:hover {
+    box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
+    top: 2px;
+  }
+}

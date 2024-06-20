@@ -1,131 +1,301 @@
-id_planta	longitud_hoja	ancho_hoja	herviboría	científico
-JAJT1	8.11	3.15		Jose Tobón
-JAJT1	8.61	2.13		Jose Tobón
-JAJT1	7.11	2.5		Jose Tobón
-JAJT1	7.2	2.88		Jose Tobón
-JAJT1	6.395	2.88		Jose Tobón
-JAJT1	7.94	24.6		Jose Tobón
-JAJT1	7.32	2.24		Jose Tobón
-JAJT1	6.9	2.93		Jose Tobón
-JAJT1	7.06	2.965		Jose Tobón
-JAJT1	7.97	2.635		Jose Tobón
-JAJT2	7.155	2.39	Sí	Jose Tobón
-JAJT2	8.27	2.44	Sí	Jose Tobón
-JAJT2	8.51	2.82	No	Jose Tobón
-JAJT2	79	2.59	No	Jose Tobón
-JAJT2	7.76	2.745	Sí	Jose Tobón
-JAJT2	6.92	2.3	No	Jose Tobón
-JAJT2	7.49	2.53	No	Jose Tobón
-JAJT2	7.69	2.61	No	Jose Tobón
-JAJT2	7.84	2.63	Sí	Jose Tobón
-JAJT2	7.66	2.92	Sí	Jose Tobón
-JAJT3	6.175	2	No	Jose Tobón
-JAJT3	6.375	2.42	Sí	Jose Tobón
-JAJT3	4.125	1.5	Sí	Jose Tobón
-JAJT3	4.205	1.5	No	Jose Tobón
-JAJT3	5.06	2	No	Jose Tobón
-JAJT3	5.02	1.71	Sí	Jose Tobón
-JAJT3	4.6	1.61	No	Jose Tobón
-JAJT3	6.03	2.47	Sí	Jose Tobón
-JAJT3	5.22	1.92	No	Jose Tobón
-JAJT3	8.02	2.3	No	Jose Tobón
-IQJT1	6.3	2.4	No	Joshua Taborda
-IQJT1	8	3	Sí	Joshua Taborda
-IQJT1	6.5	2.1	No	Joshua Taborda
-IQJT1	4.5	1.7	Sí	Joshua Taborda
-IQJT1	8.3	3	No	Joshua Taborda
-IQJT1	5.1	2.5	No	Joshua Taborda
-IQJT1	4	1.5	No	Joshua Taborda
-IQJT1	7.5	3.5	No	Joshua Taborda
-IQJT1	7	3	No	Joshua Taborda
-IQJT1	8	3.4	No	Joshua Taborda
-IQJT2	5	1.2	No	Joshua Taborda
-IQJT2	5	1.5	No	Joshua Taborda
-IQJT2	2	0.5	No	Joshua Taborda
-IQJT2	5	1.5	No	Joshua Taborda
-IQJT2	5	1.5	No	Joshua Taborda
-IQJT2	5	1.3	No	Joshua Taborda
-IQJT2	3	1	No	Joshua Taborda
-IQJT2	5.5	1.3	No	Joshua Taborda
-IQJT2	1.5	1.4	No	Joshua Taborda
-IQJT2	3.5	1	No	Joshua Taborda
-IQJT3	6.5	2.5	Sí	Joshua Taborda
-IQJT3	6.5	3	No	Joshua Taborda
-IQJT3	3.3	2	No	Joshua Taborda
-IQJT3	4.5	3	No	Joshua Taborda
-IQJT3	6.5	3	No	Joshua Taborda
-IQJT3	6.5	3	No	Joshua Taborda
-IQJT3	7.5	3.2	No	Joshua Taborda
-IQJT3	4.2	2.1	Sí	Joshua Taborda
-IQJT3	4	2.3	No	Joshua Taborda
-IQJT3	5.7	2.7	Sí	Joshua Taborda
-IQJT4	9	3	No	Joshua Taborda
-IQJT4	7	3.5	Sí	Joshua Taborda
-IQJT4	6	2.7	No	Joshua Taborda
-IQJT4	4	1.7	No	Joshua Taborda
-IQJT4	7.5	3.2	Sí	Joshua Taborda
-IQJT4	4	2	No	Joshua Taborda
-IQJT4	9.5	4.2	No	Joshua Taborda
-IQJT4	3.3	1.4	No	Joshua Taborda
-IQJT4	8	3	No	Joshua Taborda
-IQJT4	1.6	1.7	No	Joshua Taborda
-IQJT5	6.3	1.7	No	Joshua Taborda
-IQJT5	5.5	1.9	Sí	Joshua Taborda
-IQJT5	7.4	2.2	No	Joshua Taborda
-IQJT5	7	2	No	Joshua Taborda
-IQJT5	4.5	1.5	Sí	Joshua Taborda
-IQJT5	4.5	1.2	No	Joshua Taborda
-IQJT5	3.5	2	No	Joshua Taborda
-IQJT5	6.2	1.7	No	Joshua Taborda
-IQJT5	5.7	1.7	Sí	Joshua Taborda
-IQJT5	4.7	1.7	No	Joshua Taborda
-IQJT6	2	0.7	No	Isabel Quijano
-IQJT6	7	2.2	Sí	Isabel Quijano
-IQJT6	5.7	2	Sí	Isabel Quijano
-IQJT6	5.6	2	No	Isabel Quijano
-IQJT6	2.9	1.2	No	Isabel Quijano
-IQJT6	2	0.9	No	Isabel Quijano
-IQJT6	4	1.5	No	Isabel Quijano
-IQJT6	1.1	0.5	No	Isabel Quijano
-IQJT6	6.9	2.1	Sí	Isabel Quijano
-IQJT6	2.7	0.9	No	Isabel Quijano
-IQJT7	6.4	2	No	Isabel Quijano
-IQJT7	5	2.1	No	Isabel Quijano
-IQJT7	0.5	0.3	No	Isabel Quijano
-IQJT7	1.5	0.5	No	Isabel Quijano
-IQJT7	6.1	2.2	Sí	Isabel Quijano
-IQJT7	5	1.4	No	Isabel Quijano
-IQJT7	4.8	1.9	Sí	Isabel Quijano
-IQJT7	2.3	1	Sí	Isabel Quijano
-IQJT7	4.5	1.7	No	Isabel Quijano
-IQJT7	5	2	Sí	Isabel Quijano
-KPAS1	8.5	3.8	no	Katherine Mendez
-KPAS1	6.5	3	no	Katherine Mendez
-KPAS1	9.4	3	no	Katherine Mendez
-KPAS1	8.7	3.5	no	Katherine Mendez
-KPAS1	7	2.3	no	Katherine Mendez
-KPAS1	3.7	1.3	no	Katherine Mendez
-KPAS1	6.9	2.4	si	Katherine Mendez
-KPAS1	6.3	2.4	si	Katherine Mendez
-KPAS1	5	1.4	si	Katherine Mendez
-KPAS1	3	1.8	no	Katherine Mendez
-KPAS2	6.3	2.3	si	Katherine Mendez
-KPAS2	9	3	si	Katherine Mendez
-KPAS2	8.5	3.4	no	Katherine Mendez
-KPAS2	8.5	3.2	no	Katherine Mendez
-KPAS2	11.3	4	no	Katherine Mendez
-KPAS2	8.5	3.4	no	Katherine Mendez
-KPAS2	7.9	3.5	no	Katherine Mendez
-KPAS2	8.5	3.4	no	Katherine Mendez
-KPAS2	9.5	4	no	Katherine Mendez
-KPAS2	9.7	4.1	no	Katherine Mendez
-KPAS3	9.5	4.5	no	Katherine Mendez
-KPAS3	7.6	3.6	si	Katherine Mendez
-KPAS3	11	4.5	no	Katherine Mendez
-KPAS3	7.8	3.6	no	Katherine Mendez
-KPAS3	5	2.5	no	Katherine Mendez
-KPAS3	7.3	3.5	no	Katherine Mendez
-KPAS3	8	3.3	no	Katherine Mendez
-KPAS3	8.5	3	no	Katherine Mendez
-KPAS3	7	3.3	si	Katherine Mendez
-KPAS3	8.5	3.3	no	Katherine Mendez
+ID planta	Longitud hoja (cm)	Ancho hoja (cm)	Herviboría	Científico	
+JAJT1	8.11	3.15		Jose Tobón	
+JAJT1	8.61	2.13		Jose Tobón	
+JAJT1	7.11	2.5		Jose Tobón	
+JAJT1	7.2	2.88		Jose Tobón	
+JAJT1	6.395	2.88		Jose Tobón	
+JAJT1	7.94	24.6		Jose Tobón	
+JAJT1	7.32	2.24		Jose Tobón	
+JAJT1	6.9	2.93		Jose Tobón	
+JAJT1	7.06	2.965		Jose Tobón	
+JAJT1	7.97	2.635		Jose Tobón	
+JAJT2	7.155	2.39	Sí	Jose Tobón	
+JAJT2	8.27	2.44	Sí	Jose Tobón	
+JAJT2	8.51	2.82	No	Jose Tobón	
+JAJT2	79	2.59	No	Jose Tobón	
+JAJT2	7.76	2.745	Sí	Jose Tobón	
+JAJT2	6.92	2.3	No	Jose Tobón	
+JAJT2	7.49	2.53	No	Jose Tobón	
+JAJT2	7.69	2.61	No	Jose Tobón	
+JAJT2	7.84	2.63	Sí	Jose Tobón	
+JAJT2	7.66	2.92	Sí	Jose Tobón	
+JAJT3	6.175	2	No	Jose Tobón	
+JAJT3	6.375	2.42	Sí	Jose Tobón	
+JAJT3	4.125	1.5	Sí	Jose Tobón	
+JAJT3	4.205	1.5	No	Jose Tobón	
+JAJT3	5.06	2	No	Jose Tobón	
+JAJT3	5.02	1.71	Sí	Jose Tobón	
+JAJT3	4.6	1.61	No	Jose Tobón	
+JAJT3	6.03	2.47	Sí	Jose Tobón	
+JAJT3	5.22	1.92	No	Jose Tobón	
+JAJT3	8.02	2.3	No	Jose Tobón	
+IQJT1	6.3	2.4	No	Joshua Taborda	
+IQJT1	8	3	Sí	Joshua Taborda	
+IQJT1	6.5	2.1	No	Joshua Taborda	
+IQJT1	4.5	1.7	Sí	Joshua Taborda	
+IQJT1	8.3	3	No	Joshua Taborda	
+IQJT1	5.1	2.5	No	Joshua Taborda	
+IQJT1	4	1.5	No	Joshua Taborda	
+IQJT1	7.5	3.5	No	Joshua Taborda	
+IQJT1	7	3	No	Joshua Taborda	
+IQJT1	8	3.4	No	Joshua Taborda	
+IQJT2	5	1.2	No	Joshua Taborda	
+IQJT2	5	1.5	No	Joshua Taborda	
+IQJT2	2	0.5	No	Joshua Taborda	
+IQJT2	5	1.5	No	Joshua Taborda	
+IQJT2	5	1.5	No	Joshua Taborda	
+IQJT2	5	1.3	No	Joshua Taborda	
+IQJT2	3	1	No	Joshua Taborda	
+IQJT2	5.5	1.3	No	Joshua Taborda	
+IQJT2	1.5	1.4	No	Joshua Taborda	
+IQJT2	3.5	1	No	Joshua Taborda	
+IQJT3	6.5	2.5	Sí	Joshua Taborda	
+IQJT3	6.5	3	No	Joshua Taborda	
+IQJT3	3.3	2	No	Joshua Taborda	
+IQJT3	4.5	3	No	Joshua Taborda	
+IQJT3	6.5	3	No	Joshua Taborda	
+IQJT3	6.5	3	No	Joshua Taborda	
+IQJT3	7.5	3.2	No	Joshua Taborda	
+IQJT3	4.2	2.1	Sí	Joshua Taborda	
+IQJT3	4	2.3	No	Joshua Taborda	
+IQJT3	5.7	2.7	Sí	Joshua Taborda	
+IQJT4	9	3	No	Joshua Taborda	
+IQJT4	7	3.5	Sí	Joshua Taborda	
+IQJT4	6	2.7	No	Joshua Taborda	
+IQJT4	4	1.7	No	Joshua Taborda	
+IQJT4	7.5	3.2	Sí	Joshua Taborda	
+IQJT4	4	2	No	Joshua Taborda	
+IQJT4	9.5	4.2	No	Joshua Taborda	
+IQJT4	3.3	1.4	No	Joshua Taborda	
+IQJT4	8	3	No	Joshua Taborda	
+IQJT4	1.6	1.7	No	Joshua Taborda	
+IQJT5	6.3	1.7	No	Joshua Taborda	
+IQJT5	5.5	1.9	Sí	Joshua Taborda	
+IQJT5	7.4	2.2	No	Joshua Taborda	
+IQJT5	7	2	No	Joshua Taborda	
+IQJT5	4.5	1.5	Sí	Joshua Taborda	
+IQJT5	4.5	1.2	No	Joshua Taborda	
+IQJT5	3.5	2	No	Joshua Taborda	
+IQJT5	6.2	1.7	No	Joshua Taborda	
+IQJT5	5.7	1.7	Sí	Joshua Taborda	
+IQJT5	4.7	1.7	No	Joshua Taborda	
+IQJT6	2	0.7	No	Isabel Quijano	
+IQJT6	7	2.2	Sí	Isabel Quijano	
+IQJT6	5.7	2	Sí	Isabel Quijano	
+IQJT6	5.6	2	No	Isabel Quijano	
+IQJT6	2.9	1.2	No	Isabel Quijano	
+IQJT6	2	0.9	No	Isabel Quijano	
+IQJT6	4	1.5	No	Isabel Quijano	
+IQJT6	1.1	0.5	No	Isabel Quijano	
+IQJT6	6.9	2.1	Sí	Isabel Quijano	
+IQJT6	2.7	0.9	No	Isabel Quijano	
+IQJT7	6.4	2	No	Isabel Quijano	
+IQJT7	5	2.1	No	Isabel Quijano	
+IQJT7	0.5	0.3	No	Isabel Quijano	
+IQJT7	1.5	0.5	No	Isabel Quijano	
+IQJT7	6.1	2.2	Sí	Isabel Quijano	
+IQJT7	5	1.4	No	Isabel Quijano	
+IQJT7	4.8	1.9	Sí	Isabel Quijano	
+IQJT7	2.3	1	Sí	Isabel Quijano	
+IQJT7	4.5	1.7	No	Isabel Quijano	
+IQJT7	5	2	Sí	Isabel Quijano	
+KPAS1	8.5	3.8	No	Katherine Mendez	
+KPAS1	6.5	3	No	Katherine Mendez	
+KPAS1	9.4	3	No	Katherine Mendez	
+KPAS1	8.7	3.5	No	Katherine Mendez	
+KPAS1	7	2.3	No	Katherine Mendez	
+KPAS1	3.7	1.3	No	Katherine Mendez	
+KPAS1	6.9	2.4	Sì	Katherine Mendez	
+KPAS1	6.3	2.4	si	Katherine Mendez	
+KPAS1	5	1.4	si	Katherine Mendez	
+KPAS1	3	1.8	no	Katherine Mendez	
+KPAS2	6.3	2.3	si	Katherine Mendez	
+KPAS2	9	3	si	Katherine Mendez	
+KPAS2	8.5	3.4	no	Katherine Mendez	
+KPAS2	8.5	3.2	no	Katherine Mendez	
+KPAS2	11.3	4	no	Katherine Mendez	
+KPAS2	8.5	3.4	no	Katherine Mendez	
+KPAS2	7.9	3.5	no	Katherine Mendez	
+KPAS2	8.5	3.4	no	Katherine Mendez	
+KPAS2	9.5	4	no	Katherine Mendez	
+KPAS2	9.7	4.1	no	Katherine Mendez	
+KPAS3	9.5	4.5	no	Katherine Mendez	
+KPAS3	7.6	3.6	si	Katherine Mendez	
+KPAS3	11	4.5	no	Katherine Mendez	
+KPAS3	7.8	3.6	no	Katherine Mendez	
+KPAS3	5	2.5	no	Katherine Mendez	
+KPAS3	7.3	3.5	no	Katherine Mendez	
+KPAS3	8	3.3	no	Katherine Mendez	
+KPAS3	8.5	3	no	Katherine Mendez	
+KPAS3	7	3.3	si	Katherine Mendez	
+KPAS3	8.5	3.3	no	Katherine Mendez	
+MADA1	5.8	2.7	no	Daniela Sanchez	
+MADA1	3.7	2.6	no	Daniela Sanchez	
+MADA1	4.6	2.1	no	Daniela Sanchez	
+MADA1	2.9	1.6	si	Daniela Sanchez	
+MADA1	5.9	2.1	si	Daniela Sanchez	
+MADA1	3.3	1.5	no	Daniela Sanchez	
+MADA1	3.4	1.8	no	Daniela Sanchez	
+MADA1	6.2	2.7	si	Daniela Sanchez	
+MADA1	4.6	1.9	no	Daniela Sanchez	
+MADA1	1.7	0.7	no	Daniela Sanchez	
+MADA2	9.1	3.2	no	Maria de los angeles Benavides 	
+MADA2	8.2	3.8	si	Maria de los angeles Benavides 	
+MADA2	8.9	4.2	si	Maria de los angeles Benavides 	
+MADA2	8.4	3.4	si	Maria de los angeles Benavides 	
+MADA2	9.4	3.6	no	Maria de los angeles Benavides 	
+MADA2	5.8	2.9	si	Maria de los angeles Benavides 	
+MADA2	2.7	1.8	no	Maria de los angeles Benavides 	
+MADA2	6.4	3.6	no	Maria de los angeles Benavides 	
+MADA2	3.3	1.4	no	Maria de los angeles Benavides 	
+MADA2	6.5	3.4	si	Maria de los angeles Benavides 	
+MADA3	5.2	1.8	no	Maria de los angeles Benavides 	
+MADA3	5.2	1.6	no	Maria de los angeles Benavides 	
+MADA3	1.7	0.8	no	Maria de los angeles Benavides 	
+MADA3	2.4	0.9	no	Maria de los angeles Benavides 	
+MADA3	5.3	1.8	si	Maria de los angeles Benavides 	
+MADA3	6.3	2.3	no	Maria de los angeles Benavides 	
+MADA3	3.9	1.5	no	Maria de los angeles Benavides 	
+MADA3	2.4	0.9	no	Maria de los angeles Benavides 	
+MADA3	5	1.5	si	Maria de los angeles Benavides 	
+MADA3	4	1.4	no	Maria de los angeles Benavides 	
+MADA4	3.5	1.3	no	Maria de los angeles Benavides 	
+MADA4	2.3	1.1	no	Maria de los angeles Benavides 	
+MADA4	3	1.5	si	Maria de los angeles Benavides 	
+MADA4	4.2	1.6	no	Maria de los angeles Benavides 	
+MADA4	2.5	0.9	si	Maria de los angeles Benavides 	
+MADA4	3.2	1.3	no	Maria de los angeles Benavides 	
+MADA4	3.3	1.7	no	Maria de los angeles Benavides 	
+MADA4	2.5	1.3	si	Maria de los angeles Benavides 	
+MADA4	3.2	2.3	si	Maria de los angeles Benavides 	
+MADA4	1.2	0.6	no	Daniela Sanchez	
+MADA5	5.9	1.8	no	Daniela Sanchez	
+MADA5	6.2	3.8	si	Daniela Sanchez	
+MADA5	4	2	no	Daniela Sanchez	
+MADA5	3.2	1.6	no	Daniela Sanchez	
+MADA5	6.4	2	no	Daniela Sanchez	
+MADA5	3.5	2	no	Daniela Sanchez	
+MADA5	1.3	1	no	Daniela Sanchez	
+MADA5	2.6	0.8	no	Daniela Sanchez	
+MADA5	3.4	2.3	si	Daniela Sanchez	
+MADA5	1.8	0.5	no	Daniela Sanchez	
+KZCU1	8	3.9	Sí*	Karen Zapata	* Por planta
+KZCU1	5.6	3		Karen Zapata	
+KZCU1	4.7	2.6		Karen Zapata	
+KZCU1	7.2	3.5		Karen Zapata	
+KZCU1	8.5	4.6		Karen Zapata	
+KZCU1	7.3	4.1		Karen Zapata	
+KZCU1	5.4	3.1		Karen Zapata	
+KZCU1	7.2	3.5		Karen Zapata	
+KZCU1	5	2.9		Karen Zapata	
+KZCU1	7	3.2		Karen Zapata	
+KZCU2	7.7	3.3	Sí*	Karen Zapata	
+KZCU2	6.9	3.3		Karen Zapata	
+KZCU2	4.5	2.1		Karen Zapata	
+KZCU2	5.2	2.3		Karen Zapata	
+KZCU2	2.7	1.5		Karen Zapata	
+KZCU2	7.2	3.1		Karen Zapata	
+KZCU2	3.7	1.8		Karen Zapata	
+KZCU2	6.8	3		Karen Zapata	
+KZCU2	5	2.2		Karen Zapata	
+KZCU2	4.8	2.2		Karen Zapata	
+KZCU3	6	2	Sí*	Karen Zapata	
+KZCU3	7.8	2.2		Karen Zapata	
+KZCU3	4.7	1.8		Karen Zapata	
+KZCU3	5.7	2		Karen Zapata	
+KZCU3	5.5	1.8		Karen Zapata	
+KZCU3	7.4	2.7		Karen Zapata	
+KZCU3	3.4	1.1		Karen Zapata	
+KZCU3	5.3	1.4		Karen Zapata	
+KZCU3	8	2.8		Karen Zapata	
+KZCU3	4.9	1.7		Karen Zapata	
+KZCU4	5.5	2.6	Sí*	Karen Zapata	
+KZCU4	4.6	2		Karen Zapata	
+KZCU4	4	1.9		Karen Zapata	
+KZCU4	5	2.3		Karen Zapata	
+KZCU4	3.7	1.8		Karen Zapata	
+KZCU4	3.9	1.8		Karen Zapata	
+KZCU4	3.5	1.6		Karen Zapata	
+KZCU4	4.5	1.8		Karen Zapata	
+KZCU4	4.4	2.1		Karen Zapata	
+KZCU4	6	2.5		Karen Zapata	
+SAHA1	6.5	2.5	no	Salomón  Bonilla	
+SAHA1	3	1.2	no	Salomón  Bonilla	
+SAHA1	4.6	1.9	no	Salomón  Bonilla	
+SAHA1	7.1	2.8	no	Salomón  Bonilla	
+SAHA1	6.2	2.5	no	Salomón  Bonilla	
+SAHA1	4.2	1.6	no	Salomón  Bonilla	
+SAHA1	8.5	3.2	no	Salomón  Bonilla	
+SAHA1	8	2.9	no	Salomón  Bonilla	
+SAHA1	6.7	2.6	no	Salomón  Bonilla	
+SAHA1	3.5	1.4	no	Salomón  Bonilla	
+SAHA2	4.9	2	no	Salomón  Bonilla	
+SAHA2	4.2	1.7	no	Salomón  Bonilla	
+SAHA2	6.2	2.7	no	Salomón  Bonilla	
+SAHA2	5.4	2.3	no	Salomón  Bonilla	
+SAHA2	5.8	2	no	Salomón  Bonilla	
+SAHA2	5.5	2.1	no	Salomón  Bonilla	
+SAHA2	5.9	2.2	no	Salomón  Bonilla	
+SAHA2	4.3	2	no	Salomón  Bonilla	
+SAHA2	5.9	2.2	no	Salomón  Bonilla	
+SAHA2	4.5	2	no	Salomón  Bonilla	
+SAHA3	5.5	2	no	Salomón  Bonilla	
+SAHA3	3.3	1.3	no	Salomón  Bonilla	
+SAHA3	6.1	2.1	no	Salomón  Bonilla	
+SAHA3	4	1.7	no	Salomón  Bonilla	
+SAHA3	4.5	1.5	no	Salomón  Bonilla	
+SAHA3	5.2	1.7	no	Salomón  Bonilla	
+SAHA3	4.2	1.5	no	Salomón  Bonilla	
+SAHA3	3.3	1.4	no	Salomón  Bonilla	
+SAHA3	3.5	1.7	si	Salomón  Bonilla	
+SAHA3	4.5	1.5	no	Salomón  Bonilla	
+SAHA4	6.2	1.9	no	Salomón  Bonilla	
+SAHA4	3.3	1.4	no	Salomón  Bonilla	
+SAHA4	4.6	1.8	no	Salomón  Bonilla	
+SAHA4	3.6	1.5	no	Salomón  Bonilla	
+SAHA4	5.7	1.9	no	Salomón  Bonilla	
+SAHA4	3.6	1.3	no	Salomón  Bonilla	
+SAHA4	4.9	1.6	no	Salomón  Bonilla	
+SAHA4	4.2	1.3	si	Salomón  Bonilla	
+SAHA4	3.9	1.2	si	Salomón  Bonilla	
+SAHA4	4.8	1.4	no	Salomón  Bonilla	
+SAHA5	5.9	2.6	no	Salomón  Bonilla	
+SAHA5	7.6	3	no	Salomón  Bonilla	
+SAHA5	6.1	3	no	Salomón  Bonilla	
+SAHA5	5.7	2.5	no	Salomón  Bonilla	
+SAHA5	4.5	1.9	si	Salomón  Bonilla	
+SAHA5	6.3	3	no	Salomón  Bonilla	
+SAHA5	7.5	3	no	Salomón  Bonilla	
+SAHA5	7.6	2.8	no	Salomón  Bonilla	
+SAHA5	4.9	1.7	si	Salomón  Bonilla	
+SAHA5	7.9	2.7	si	Salomón  Bonilla	
+SILA1	9.2	4.7	no	Laura Builes	
+SILA1	9.3	5.2	no	Laura Builes	
+SILA1	6	3.1	no	Laura Builes	
+SILA1	9.4	3.4	no	Laura Builes	
+SILA1	10.1	4.4	si	Laura Builes	
+SILA1	10.2	3.5	no	Laura Builes	
+SILA1	10.3	4.3	no	Laura Builes	
+SILA1	8.3	3.8	si	Laura Builes	
+SILA1	8.6	3.9	no	Laura Builes	
+SILA1	6.6	4.4	no	Laura Builes	
+SILA2	8	3.3	No	Laura Builes	
+SILA2	8	3.1	si	Laura Builes	
+SILA2	3.4	1.6	no	Laura Builes	
+SILA2	7.8	3.1	no	Laura Builes	
+SILA2	7	2.7	no	Laura Builes	
+SILA2	8	2.6	si	Laura Builes	
+SILA2	8.3	2.8	si	Laura Builes	
+SILA2	2.8	1.1	si	Laura Builes	
+SILA2	6.5	2.4	no	Laura Builes	
+SILA2	5.6	2.5	no	Laura Builes	
+SILA3	6.2	2.1	no	Laura Builes	
+SILA3	5.9	1.7	no	Laura Builes	
+SILA3	5	2.3	si	Laura Builes	
+SILA3	5	1.5	no	Laura Builes	
+SILA3	5.8	2.4	si	Laura Builes	
+SILA3	5.2	2	no	Laura Builes	
+SILA3	5.4	1.7	no	Laura Builes	
+SILA3	6.5	2.2	no	Laura Builes	
+SILA3	4.5	1.4	si	Laura Builes	
+SILA3	5	1.2	no	Laura Builes	
