@@ -25,4 +25,5 @@ con R y Python.
 ## Diapositivas
 
 0. [Introducción](0-intro/index.qmd)
-1. [Análisis de datos en R](1-R/index.qmd)
+1. [Análisis de datos en R](1-intro-R/index.qmd)
+2. [Estadística](2-estadística/index.qmd)

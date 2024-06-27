@@ -1,0 +1,62 @@
+---
+title: 'Análisis de datos en R'
+subtitle: 'Estadística'
+author: 'Juan Camilo Arboleda Rivera'
+affiliation: Instituto de Biología, UdeA
+format:
+  revealjs:
+    slide-number: true
+    chalkboard: true
+    footer: >
+      [Análisis de datos](../index.qmd). Juan Camilo Arboleda Rivera, UdeA, 2024.
+    theme: [default, ../slides.scss]
+    width: 1920
+    height: 1080
+    code-line-numbers: false
+    multiplex: true
+---
+
+# Estadística
+
+## Población vs. muestra
+
+![](https://gitlab.com/Nesper94/diapositivas-genetica/-/raw/main/unidad-3/u3-2-gen%C3%A9tica-mendeliana/imgs/poblaci%C3%B3n-vs-muestra.jpg?ref_type=heads){fig-align="center"}
+
+## ¿Qué es ser normal?
+
+![](https://miro.medium.com/v2/resize:fit:550/1*62UHx2o44DhHUhSua5q6jQ.jpeg){fig-align="center"}
+
+## ¿Son tus datos normales, o les gusta madrugar?
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmwDD2jhdMEbqBKLeNx_iOjE-OPjTwqT7Vg&s){width=400 fig-align="center"}
+
+```R
+hojas |> shapiro_test(longitud)
+```
+
+## Outliers (Datos atípicos)
+
+![](https://i.pinimg.com/originals/17/e6/a0/17e6a012beb92be590a2b9f0c96c201c.jpg){fig-align="center" width=30%}
+
+## Prueba t de Student
+
+- Sirve para saber si dos medias son diferentes.
+
+. . .
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Socken_farbig.jpeg/566px-Socken_farbig.jpeg)
+
+. . .
+
+- [Existe gracias a la cerveza.](https://vivaelsoftwarelibre.com/por-que-se-llama-t-de-student/)
+
+## ANOVA (Análisis de Varianza)
+
+![](https://r.qcbs.ca/workshop04/book-en/book-en_files/figure-html/unnamed-chunk-44-1.png)
+
+Como una prueba t de Student pero cuando se comparan las medias entre más de
+dos grupos.
+
+---
+
+![](https://datatab.es/assets/tutorial/anova/an%C3%A1lisis_de_varianza.png)
