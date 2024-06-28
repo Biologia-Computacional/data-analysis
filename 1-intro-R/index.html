@@ -713,12 +713,12 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 <div class="columns">
 <div class="column" style="width:50%;">
 <center>
-<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079792568/in/album-72157709124750472/" title="Fair Data (ESP)"><img src="https://live.staticflickr.com/65535/48079792568_ede5fe7b83_c.jpg" width="672" height="950" alt="Fair Data (ESP)"></a>
+<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079792568/in/album-72157709124750472/" title="Fair Data (ESP)"><img src="https://live.staticflickr.com/65535/48079792568_ede5fe7b83_c.jpg" width="636" height="900" alt="Fair Data (ESP)"></a>
 <script async="" src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </center>
 </div><div class="column" style="width:50%;">
 <center>
-<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079763261/in/album-72157709124750472/" title="Open Data (ESP)"><img src="https://live.staticflickr.com/65535/48079763261_502b533679_c.jpg" width="672" height="950" alt="Open Data (ESP)"></a>
+<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079763261/in/album-72157709124750472/" title="Open Data (ESP)"><img src="https://live.staticflickr.com/65535/48079763261_502b533679_c.jpg" width="636" height="900" alt="Open Data (ESP)"></a>
 <script async="" src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </center>
 </div>
@@ -765,14 +765,27 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 </div>
 </div>
 </section>
-<section id="gráficos-de-dispersión" class="slide level2">
-<h2>Gráficos de dispersión</h2>
+<section id="density-plot" class="slide level2">
+<h2>Density plot</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
-<span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span></span>
+<span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(longitud <span class="sc">&lt;</span> <span class="dv">20</span> <span class="sc">&amp;</span> ancho <span class="sc">&lt;</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb30-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb30-4"><a aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ..density..), <span class="at">fill =</span> <span class="st">"#9999ff"</span>, <span class="at">color =</span> <span class="st">"#9999ff"</span>) <span class="sc">+</span></span>
+<span id="cb30-5"><a aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">y =</span> .<span class="dv">1</span>, <span class="at">label =</span> <span class="st">"Longitud"</span>)) <span class="sc">+</span></span>
+<span id="cb30-6"><a aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> ancho, <span class="at">y =</span> <span class="sc">-</span>..density..), <span class="at">fill =</span> <span class="st">"#77eeaa"</span>, <span class="at">color =</span> <span class="st">"#77eeaa"</span>) <span class="sc">+</span></span>
+<span id="cb30-7"><a aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">4.5</span>, <span class="at">y =</span> <span class="sc">-</span>.<span class="dv">2</span>, <span class="at">label =</span> <span class="st">"Ancho"</span>)) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">'Medida en cm'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="gráficos-de-dispersión" class="slide level2">
+<h2>Gráficos de dispersión</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
+<span id="cb31-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
 <section id="todavía-más-gráficos" class="slide level2">
 <h2>Todavía más gráficos</h2>
 <p><a href="https://r-graph-gallery.com">The R Graph Gallery</a></p>
@@ -819,7 +832,7 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"d3726726a3964fe5","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"75d3b8c00c2567a0","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

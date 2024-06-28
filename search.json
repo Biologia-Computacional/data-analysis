@@ -203,6 +203,13 @@
     "text": "Boxplot o diagrama de caja\n\n\nggplot(hojas) +\n  geom_boxplot(mapping = aes(x = longitud))"
   },
   {
+    "objectID": "1-intro-R/index.html#density-plot",
+    "href": "1-intro-R/index.html#density-plot",
+    "title": "Análisis de datos en R",
+    "section": "Density plot",
+    "text": "Density plot\n\nhojas |&gt;\n  filter(longitud &lt; 20 & ancho &lt; 10) |&gt;\n  ggplot() +\n    geom_density(aes(x = longitud, y = ..density..), fill = \"#9999ff\", color = \"#9999ff\") +\n      geom_label(aes(x = 1, y = .1, label = \"Longitud\")) +\n    geom_density(aes(x = ancho, y = -..density..), fill = \"#77eeaa\", color = \"#77eeaa\") +\n      geom_label(aes(x = 4.5, y = -.2, label = \"Ancho\")) + xlab('Medida en cm')"
+  },
+  {
     "objectID": "1-intro-R/index.html#gráficos-de-dispersión",
     "href": "1-intro-R/index.html#gráficos-de-dispersión",
     "title": "Análisis de datos en R",
