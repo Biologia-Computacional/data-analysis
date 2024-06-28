@@ -249,12 +249,12 @@ RStudio no recuerde información adicional sobre el ambiente de trabajo, es
 
 ::: {.column width="50%"}
 <center>
-<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079792568/in/album-72157709124750472/" title="Fair Data (ESP)"><img src="https://live.staticflickr.com/65535/48079792568_ede5fe7b83_c.jpg" width="672" height="950" alt="Fair Data (ESP)"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079792568/in/album-72157709124750472/" title="Fair Data (ESP)"><img src="https://live.staticflickr.com/65535/48079792568_ede5fe7b83_c.jpg" width="636" height="900" alt="Fair Data (ESP)"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </center>
 :::
 ::: {.column width="50%"}
 <center>
-<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079763261/in/album-72157709124750472/" title="Open Data (ESP)"><img src="https://live.staticflickr.com/65535/48079763261_502b533679_c.jpg" width="672" height="950" alt="Open Data (ESP)"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/biodiversidata/48079763261/in/album-72157709124750472/" title="Open Data (ESP)"><img src="https://live.staticflickr.com/65535/48079763261_502b533679_c.jpg" width="636" height="900" alt="Open Data (ESP)"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </center>
 :::
 ::::
@@ -300,6 +300,18 @@ ggplot(hojas) +
 ```{r, echo=TRUE}
 ggplot(hojas) +
   geom_boxplot(mapping = aes(x = longitud))
+```
+
+## Density plot
+
+```{r, echo=TRUE}
+hojas |>
+  filter(longitud < 20 & ancho < 10) |>
+  ggplot() +
+    geom_density(aes(x = longitud, y = ..density..), fill = "#9999ff", color = "#9999ff") +
+      geom_label(aes(x = 1, y = .1, label = "Longitud")) +
+    geom_density(aes(x = ancho, y = -..density..), fill = "#77eeaa", color = "#77eeaa") +
+      geom_label(aes(x = 4.5, y = -.2, label = "Ancho")) + xlab('Medida en cm')
 ```
 
 ## Gráficos de dispersión
