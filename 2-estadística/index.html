@@ -441,21 +441,126 @@ Juan Camilo Arboleda Rivera
 </ul>
 </div>
 </section>
-<section id="anova-análisis-de-varianza" class="slide level2">
-<h2>ANOVA (Análisis de Varianza)</h2>
+<section id="supuestos-para-hacer-una-prueba-t-de-student" class="slide level2">
+<h2>Supuestos para hacer una prueba t de Student</h2>
+<ol type="1">
+<li><p>Independencia de los datos.</p></li>
+<li><p>Si las muestras de cada grupo son pequeñas, estas deben satisfacer normalidad. Si son grandes (n &gt; 30) el TLC asegura que se pueda usar la prueba t de Student.</p></li>
+<li><p>Homocedasticidad.</p></li>
+<li><p>No deberían haber outliers.</p></li>
+</ol>
+</section>
+<section id="prueba-t-de-student-1" class="slide level2">
+<h2>Prueba t de Student</h2>
+<p><br>
+</p>
+<p>¿Hay diferencias <strong>estadísticamente significativas</strong> entre las longitudes de las hojas con y sin herbivoría?</p>
+<p>Primero verifiquemos los supuestos sobre los datos.<br>
+</p>
+</section>
+<section id="test-de-levene-para-homocedasticidad" class="slide level2">
+<h2>Test de Levene para homocedasticidad</h2>
+<p>Varianza: <span class="math display">\[
+\sigma^2 = \dfrac{\sum (x - \bar{x})^2}{N}
+\]</span></p>
+
+<img data-src="imgs/homocedasticidad.png" class="quarto-figure quarto-figure-center r-stretch"><p>Test de Levene en R:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(<span class="at">y =</span> hojas<span class="sc">$</span>longitud, <span class="at">group =</span> hojas<span class="sc">$</span>Herbivoría)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Levene's Test for Homogeneity of Variance (center = median)
+       Df F value   Pr(&gt;F)   
+group   2  4.7381 0.009454 **
+      286                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="prueba-t-de-student-2" class="slide level2">
+<h2>Prueba t de Student</h2>
+<p><br>
+</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(herb_si, herb_no, <span class="at">var.equal =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+<code>herb_si</code> y <code>herb_no</code> deben ser vectores con las longitudes de las hojas con y sin herbivoría respectivamente.</p>
+<p>¿Cómo generamos estos vectores?</p>
+</section>
+<section id="el-valor-p" class="slide level2">
+<h2>El valor p</h2>
+<p>Puede interpretarse de varias formas:</p>
+<ol type="1">
+<li><p>Probabilidad de que los resultados obtenidos se deban al azar.</p></li>
+<li><p>Probabilidad de obtener los resultados observados, asumiendo que la <strong>hipótesis nula</strong> es cierta.</p></li>
+<li><p>Probabilidad de rechazar la hipótesis nula siendo esta cierta.</p></li>
+</ol>
+</section>
+<section id="hipótesis-nula-e-hipótesis-alternativa" class="slide level2">
+<h2>Hipótesis nula e Hipótesis alternativa</h2>
+
+<img data-src="imgs/hipotesis-nula-alternativa.avif" class="quarto-figure quarto-figure-center r-stretch" width="600"></section>
+<section id="anova" class="slide level2">
+<h2>ANOVA</h2>
+<p><strong>AN</strong>alysis <strong>O</strong>f <strong>VA</strong>riance, Análisis de Varianza</p>
 
 <img data-src="https://r.qcbs.ca/workshop04/book-en/book-en_files/figure-html/unnamed-chunk-44-1.png" class="r-stretch"><p>Como una prueba t de Student pero cuando se comparan las medias entre más de dos grupos.</p>
 </section>
 <section class="slide level2">
 
 
+<img data-src="https://datatab.es/assets/tutorial/anova/an%C3%A1lisis_de_varianza.png" class="r-stretch"></section>
+<section id="supuestos-para-hacer-una-anova" class="slide level2">
+<h2>Supuestos para hacer una ANOVA</h2>
+<ol type="1">
+<li><p>Independencia de los datos.</p></li>
+<li><p>Si las muestras de cada grupo son pequeñas, estas deben satisfacer normalidad. Si son grandes (n &gt; 30) el TLC asegura que se pueda usar la ANOVA.</p></li>
+<li><p>Homocedasticidad.</p></li>
+<li><p>No deberían haber outliers.</p></li>
+</ol>
+</section>
+<section id="existirán-diferencias-en-el-ancho-promedio-de-las-hojas-dependiendo-de-quién-las-midió" class="slide level2">
+<h2>¿Existirán diferencias en el ancho promedio de las hojas dependiendo de quién las midió?</h2>
+<p><br>
+</p>
 
-<img data-src="https://datatab.es/assets/tutorial/anova/an%C3%A1lisis_de_varianza.png" class="r-stretch"><div class="quarto-auto-generated-content">
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="anova-en-r" class="slide level2">
+<h2>ANOVA en R</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>res_anova <span class="ot">&lt;-</span> <span class="fu">aov</span>(ancho <span class="sc">~</span> Científico, <span class="at">data =</span> hojas)</span>
+<span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Ver normalidad de los residuales</span></span>
+<span id="cb5-4"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas, <span class="fu">aes</span>(<span class="at">x =</span> res_anova<span class="sc">$</span>residuals)) <span class="sc">+</span></span>
+<span id="cb5-5"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">'Residuales'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="bibliografía" class="slide level2">
+<h2>Bibliografía</h2>
+
+<img data-src="https://m.media-amazon.com/images/I/61BufyaNalL._AC_UF1000,1000_QL80_.jpg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section id="ejercicio" class="title-slide slide level1 center">
+<h1>Ejercicio</h1>
+<ol type="1">
+<li><p>Descargar e importar a R el <a href="https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv">conjunto de datos Iris</a>.</p></li>
+<li><p>Hacer histogramas y diagramas de caja para las variables cuantitativas.</p></li>
+<li><p>Hacer estos histogramas y diagramas de caja pero discriminando por especie.</p></li>
+<li><p>Hacer gráfico de dispersión de la longitud del pétalo vs.&nbsp;ancho del pétalo.</p></li>
+<li><p>Hacer gráfico de dispersión discriminando por especie.</p></li>
+<li><p>Hacer una ANOVA para ver si hay por lo menos una especie cuya longitud de los pétalos difiera significativamente de las demás.</p></li>
+</ol>
+
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="../index.html">Análisis de datos</a>. Juan Camilo Arboleda Rivera, UdeA, 2024.</p>
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -671,6 +776,44 @@ Juan Camilo Arboleda Rivera
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

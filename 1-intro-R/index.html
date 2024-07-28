@@ -736,6 +736,14 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 </section>
 <section id="renombremos-las-columnas" class="slide level2">
 <h2>Renombremos las columnas</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="ot">&lt;-</span> hojas <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb28-3"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">id_planta =</span> <span class="st">'ID planta'</span>,</span>
+<span id="cb28-4"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">longitud =</span> <span class="st">'Longitud hoja (cm)'</span>,</span>
+<span id="cb28-5"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">ancho =</span> <span class="st">'Ancho hoja (cm)'</span></span>
+<span id="cb28-6"><a aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section></section>
 <section>
 <section id="visualización-de-datos-con-ggplot2" class="title-slide slide level1 center">
@@ -745,8 +753,8 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 <section id="histogramas" class="slide level2">
 <h2>Histogramas</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
-<span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
+<span id="cb29-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="index_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
@@ -754,8 +762,8 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 <h2>Boxplot o diagrama de caja</h2>
 <p><img data-src="https://miro.medium.com/max/9000/1*2c21SkzJMf3frPXPAR_gZA.png"></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
-<span id="cb29-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hojas) <span class="sc">+</span></span>
+<span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -765,30 +773,181 @@ El editor resalta los errores de sintaxis con una línea roja serpenteante bajo 
 </div>
 </div>
 </section>
+<section id="filtrar-datos" class="slide level2">
+<h2>Filtrar datos</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a aria-hidden="true" tabindex="-1"></a>filtrados <span class="ot">&lt;-</span> <span class="fu">filter</span>(hojas, longitud <span class="sc">&lt;</span> <span class="dv">20</span> <span class="sc">&amp;</span> ancho <span class="sc">&lt;</span> <span class="dv">10</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<h3 id="ejercicio">Ejercicio</h3>
+<p>¿Cuántas hojas tenían menos de 5 centímetros de largo?</p>
+</section>
 <section id="density-plot" class="slide level2">
 <h2>Density plot</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span></span>
-<span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(longitud <span class="sc">&lt;</span> <span class="dv">20</span> <span class="sc">&amp;</span> ancho <span class="sc">&lt;</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb30-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb30-4"><a aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ..density..), <span class="at">fill =</span> <span class="st">"#9999ff"</span>, <span class="at">color =</span> <span class="st">"#9999ff"</span>) <span class="sc">+</span></span>
-<span id="cb30-5"><a aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">y =</span> .<span class="dv">1</span>, <span class="at">label =</span> <span class="st">"Longitud"</span>)) <span class="sc">+</span></span>
-<span id="cb30-6"><a aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> ancho, <span class="at">y =</span> <span class="sc">-</span>..density..), <span class="at">fill =</span> <span class="st">"#77eeaa"</span>, <span class="at">color =</span> <span class="st">"#77eeaa"</span>) <span class="sc">+</span></span>
-<span id="cb30-7"><a aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">4.5</span>, <span class="at">y =</span> <span class="sc">-</span>.<span class="dv">2</span>, <span class="at">label =</span> <span class="st">"Ancho"</span>)) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">'Medida en cm'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
-<section id="gráficos-de-dispersión" class="slide level2">
-<h2>Gráficos de dispersión</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
-<span id="cb31-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(filtrados) <span class="sc">+</span></span>
+<span id="cb32-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> <span class="fu">after_stat</span>(density)), <span class="at">fill =</span> <span class="st">"#9999ff"</span>,</span>
+<span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> <span class="st">"#9999ff"</span>) <span class="sc">+</span></span>
+<span id="cb32-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">5</span>, <span class="at">y =</span> .<span class="dv">1</span>, <span class="at">label =</span> <span class="st">"Longitud"</span>) <span class="sc">+</span></span>
+<span id="cb32-5"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x =</span> ancho, <span class="at">y =</span> <span class="sc">-</span><span class="fu">after_stat</span>(density)), <span class="at">fill =</span> <span class="st">"#77eeaa"</span>,</span>
+<span id="cb32-6"><a aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> <span class="st">"#77eeaa"</span>) <span class="sc">+</span></span>
+<span id="cb32-7"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">2.5</span>, <span class="at">y =</span> <span class="sc">-</span>.<span class="dv">2</span>, <span class="at">label =</span> <span class="st">"Ancho"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">'Medida en cm'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="index_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<section id="gráficos-de-dispersión" class="slide level2">
+<h2>Gráficos de dispersión</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
+<span id="cb33-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Científico))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Facetas</span></span>
+<span id="cb34-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
+<span id="cb34-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho)) <span class="sc">+</span></span>
+<span id="cb34-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> Científico) <span class="sc">+</span></span>
+<span id="cb34-5"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="cn">NA</span>, <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb34-6"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="cn">NA</span>, <span class="dv">5</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> hojas) <span class="sc">+</span></span>
+<span id="cb35-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> longitud, <span class="at">y =</span> ancho, <span class="at">color =</span> Herbivoría))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<section id="limpieza-de-datos" class="slide level2">
+<h2>Limpieza de datos</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Unificar los datos inconsistentes</span></span>
+<span id="cb36-2"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="ot">&lt;-</span> hojas <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="st">'Herbivoría'</span>, str_replace, <span class="st">'Si|si|Sì'</span>, <span class="st">'Sí'</span>))</span>
+<span id="cb36-3"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Generar nueva columna 'ra' (relación de aspecto)</span></span>
+<span id="cb36-5"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="ot">&lt;-</span> hojas <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">ra =</span> longitud<span class="sc">/</span>ancho)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="todavía-más-gráficos" class="slide level2">
 <h2>Todavía más gráficos</h2>
 <p><a href="https://r-graph-gallery.com">The R Graph Gallery</a></p>
+</section></section>
+<section>
+<section id="manipulación-de-los-datos" class="title-slide slide level1 center">
+<h1>Manipulación de los datos</h1>
+
+</section>
+<section id="seleccionar-columnas" class="slide level2">
+<h2>Seleccionar columnas</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span> <span class="fu">select</span>(longitud)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 300 × 1
+   longitud
+      &lt;dbl&gt;
+ 1     8.11
+ 2     8.61
+ 3     7.11
+ 4     7.2 
+ 5     6.40
+ 6     7.94
+ 7     7.32
+ 8     6.9 
+ 9     7.06
+10     7.97
+# ℹ 290 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="agrupar-datos" class="slide level2">
+<h2>Agrupar datos</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Herbivoría)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 300 × 6
+# Groups:   Herbivoría [3]
+   id_planta longitud ancho Herbivoría Científico    ra
+   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;
+ 1 JAJT1         8.11  3.15 &lt;NA&gt;       Jose Tobón 2.57 
+ 2 JAJT1         8.61  2.13 &lt;NA&gt;       Jose Tobón 4.04 
+ 3 JAJT1         7.11  2.5  &lt;NA&gt;       Jose Tobón 2.84 
+ 4 JAJT1         7.2   2.88 &lt;NA&gt;       Jose Tobón 2.5  
+ 5 JAJT1         6.40  2.88 &lt;NA&gt;       Jose Tobón 2.22 
+ 6 JAJT1         7.94 24.6  &lt;NA&gt;       Jose Tobón 0.323
+ 7 JAJT1         7.32  2.24 &lt;NA&gt;       Jose Tobón 3.27 
+ 8 JAJT1         6.9   2.93 &lt;NA&gt;       Jose Tobón 2.35 
+ 9 JAJT1         7.06  2.96 &lt;NA&gt;       Jose Tobón 2.38 
+10 JAJT1         7.97  2.64 &lt;NA&gt;       Jose Tobón 3.02 
+# ℹ 290 more rows</code></pre>
+</div>
+</div>
+<p><br>
+Usar la función <code>group_by</code> por sí sola no hace mucho, es útil porque las operaciones subsecuentes se realizarán por grupo.</p>
+</section>
+<section id="agrupar-datos-1" class="slide level2">
+<h2>Agrupar datos</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span></span>
+<span id="cb41-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Herbivoría) <span class="sc">|&gt;</span></span>
+<span id="cb41-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb41-4"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">lon_promedio =</span> <span class="fu">mean</span>(longitud),</span>
+<span id="cb41-5"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">sd_lon =</span> <span class="fu">sd</span>(longitud),</span>
+<span id="cb41-6"><a aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>() <span class="co"># Número de filas en cada grupo</span></span>
+<span id="cb41-7"><a aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 4
+  Herbivoría lon_promedio sd_lon     n
+  &lt;chr&gt;             &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;
+1 No                 5.94  5.83    186
+2 Sí                 5.80  1.73    104
+3 &lt;NA&gt;               7.46  0.671    10</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<h3 id="ejercicio-1">Ejercicio</h3>
+<p>¿Cuál es el ancho promedio de las hojas para cada persona?</p>
+</section>
+<section id="desagrupar-datos" class="slide level2">
+<h2>Desagrupar datos</h2>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a aria-hidden="true" tabindex="-1"></a>hojas <span class="sc">|&gt;</span></span>
+<span id="cb43-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 300 × 6
+   id_planta longitud ancho Herbivoría Científico    ra
+   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;
+ 1 JAJT1         8.11  3.15 &lt;NA&gt;       Jose Tobón 2.57 
+ 2 JAJT1         8.61  2.13 &lt;NA&gt;       Jose Tobón 4.04 
+ 3 JAJT1         7.11  2.5  &lt;NA&gt;       Jose Tobón 2.84 
+ 4 JAJT1         7.2   2.88 &lt;NA&gt;       Jose Tobón 2.5  
+ 5 JAJT1         6.40  2.88 &lt;NA&gt;       Jose Tobón 2.22 
+ 6 JAJT1         7.94 24.6  &lt;NA&gt;       Jose Tobón 0.323
+ 7 JAJT1         7.32  2.24 &lt;NA&gt;       Jose Tobón 3.27 
+ 8 JAJT1         6.9   2.93 &lt;NA&gt;       Jose Tobón 2.35 
+ 9 JAJT1         7.06  2.96 &lt;NA&gt;       Jose Tobón 2.38 
+10 JAJT1         7.97  2.64 &lt;NA&gt;       Jose Tobón 3.02 
+# ℹ 290 more rows</code></pre>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

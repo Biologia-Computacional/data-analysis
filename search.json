@@ -1,59 +1,38 @@
 [
   {
-    "objectID": "2-estadística/index.html#población-vs.-muestra",
-    "href": "2-estadística/index.html#población-vs.-muestra",
-    "title": "Análisis de datos en R",
-    "section": "Población vs. muestra",
-    "text": "Población vs. muestra"
-  },
-  {
-    "objectID": "2-estadística/index.html#qué-es-ser-normal",
-    "href": "2-estadística/index.html#qué-es-ser-normal",
-    "title": "Análisis de datos en R",
-    "section": "¿Qué es ser normal?",
-    "text": "¿Qué es ser normal?"
-  },
-  {
-    "objectID": "2-estadística/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
-    "href": "2-estadística/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
-    "title": "Análisis de datos en R",
-    "section": "¿Son tus datos normales, o les gusta madrugar?",
-    "text": "¿Son tus datos normales, o les gusta madrugar?\n\nhojas |&gt; shapiro_test(longitud)"
-  },
-  {
-    "objectID": "2-estadística/index.html#outliers-datos-atípicos",
-    "href": "2-estadística/index.html#outliers-datos-atípicos",
-    "title": "Análisis de datos en R",
-    "section": "Outliers (Datos atípicos)",
-    "text": "Outliers (Datos atípicos)"
-  },
-  {
-    "objectID": "2-estadística/index.html#prueba-t-de-student",
-    "href": "2-estadística/index.html#prueba-t-de-student",
-    "title": "Análisis de datos en R",
-    "section": "Prueba t de Student",
-    "text": "Prueba t de Student\n\nSirve para saber si dos medias son diferentes.\n\n\n\n\n\n\nExiste gracias a la cerveza."
-  },
-  {
-    "objectID": "2-estadística/index.html#anova-análisis-de-varianza",
-    "href": "2-estadística/index.html#anova-análisis-de-varianza",
-    "title": "Análisis de datos en R",
-    "section": "ANOVA (Análisis de Varianza)",
-    "text": "ANOVA (Análisis de Varianza)\n\nComo una prueba t de Student pero cuando se comparan las medias entre más de dos grupos."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "2-estadística/recursos.html",
+    "href": "2-estadística/recursos.html",
     "title": "Análisis de datos",
     "section": "",
-    "text": "En esta página encontrarás el material del minicurso de análisis de datos con R y Python."
+    "text": "Muy buena explicación sobre la prueba t de Student\nMuy buena explicación sobre la ANOVA"
   },
   {
-    "objectID": "index.html#diapositivas",
-    "href": "index.html#diapositivas",
+    "objectID": "0-intro/index.html#altura-del-árbol",
+    "href": "0-intro/index.html#altura-del-árbol",
     "title": "Análisis de datos",
-    "section": "Diapositivas",
-    "text": "Diapositivas\n\nIntroducción\nAnálisis de datos en R\nEstadística"
+    "section": "Altura del árbol",
+    "text": "Altura del árbol\n\nhttp://wiki.awf.forst.uni-goettingen.de/wiki/index.php/The_trigonometric_principle"
+  },
+  {
+    "objectID": "1-intro-R/recursos.html",
+    "href": "1-intro-R/recursos.html",
+    "title": "Análisis de datos",
+    "section": "",
+    "text": "Versión en español del curso https://tereom.github.io/est_computacional/01-Intro-R/R_analisis_datos_visualizacion https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/ https://bookdown.org/gaston_becerra/curso-intro-r/analisis-de-datos-con-r.html https://rpubs.com/Andersson_Vargas/1120758 https://swcarpentry.github.io/r-novice-gapminder-es/ https://datos.gob.es/es/noticia/open-access-la-verde-la-dorada-y-la-hibrida"
+  },
+  {
+    "objectID": "material-adicional/recursos-adicionales.html",
+    "href": "material-adicional/recursos-adicionales.html",
+    "title": "Análisis de datos",
+    "section": "",
+    "text": "Libro Python for Data Analysis\nProgramación en R\n\nLibro principal el mejor de todos los tiempos: - R4 Data Science\n\nAdvanced R, de Wickham\nHappy Git de Jennifer Bryan\nrenv\ntidystats: Conjunto de paquetes para hacer pruebas estadísticas.\neasystats: Más cosas de estadística muy chévere.\nExtensiones asombrosas para ggplot2\nGalería con gráficos muy bonitos\n\n\n\nCapas de ggplot2\n\n\n\nBuscar más información sobre estas capas de ggplot2 y cómo funcionan. En esta página hay más información.\nBuscar también “la gramática de los gráficos”.\npkgdown: Sistema para generar paquetes de R.\nEstructura de un proyecto de Biología Computacional\nMuy buen tutorial sobre R en español\nMaterial para instructores"
+  },
+  {
+    "objectID": "material-adicional/ideas.html",
+    "href": "material-adicional/ideas.html",
+    "title": "ANOVA",
+    "section": "",
+    "text": "Medir rasgos de plantas, por ejemplo largo y ancho de las hojas, diámetro a la altura del pecho, si son Agavaceas el número de dientes en las hojas.\nEn palmeras distancias entre nudos y tal vez correlacionarlo con su altura o especie.\nTal vez estudiar una sola especie y ver si condiciones del microclima pueden relacionarse con el largo de sus hojas o su ancho o cosas así.\nPor ejemplo, se podría estudiar Tradescantia zebrina, que hay muchas por toda la universidad.\n¿Mirar asimetría en las hojas quizás? ¿Grosor de la hoja?\nConjuntos de datos de plantas https://experts.illinois.edu/en/organisations/plant-biology/datasets/\nTener alguna variable categórica, por ejemplo tamaño de la planta, o tipo de planta o aguna cosa así.\n\nANOVA\nHacer una ANOVA para ver si hay diferencias entre las personas que hicieron la medición.\nCometer errores a propósito al insertar los datos para luego hablar sobre los outliers.\n\n\n2024-06-12\nForcats es un paquete para trabajar con factores mejor que en R base. Las variables categóricas la idea es que sean de tipo de dato “Factor”.\nTidytuesday publican datos y la gente los analiza."
   },
   {
     "objectID": "1-intro-R/index.html#instalando-r-en-linux",
@@ -186,7 +165,7 @@
     "href": "1-intro-R/index.html#renombremos-las-columnas",
     "title": "Análisis de datos en R",
     "section": "Renombremos las columnas",
-    "text": "Renombremos las columnas"
+    "text": "Renombremos las columnas\n\nhojas &lt;- hojas |&gt;\n  rename(\n    id_planta = 'ID planta',\n    longitud = 'Longitud hoja (cm)',\n    ancho = 'Ancho hoja (cm)'\n    )"
   },
   {
     "objectID": "1-intro-R/index.html#histogramas",
@@ -203,11 +182,18 @@
     "text": "Boxplot o diagrama de caja\n\n\nggplot(hojas) +\n  geom_boxplot(mapping = aes(x = longitud))"
   },
   {
+    "objectID": "1-intro-R/index.html#filtrar-datos",
+    "href": "1-intro-R/index.html#filtrar-datos",
+    "title": "Análisis de datos en R",
+    "section": "Filtrar datos",
+    "text": "Filtrar datos\n\n\n\nfiltrados &lt;- filter(hojas, longitud &lt; 20 & ancho &lt; 10)\n\n\n\nEjercicio\n¿Cuántas hojas tenían menos de 5 centímetros de largo?"
+  },
+  {
     "objectID": "1-intro-R/index.html#density-plot",
     "href": "1-intro-R/index.html#density-plot",
     "title": "Análisis de datos en R",
     "section": "Density plot",
-    "text": "Density plot\n\nhojas |&gt;\n  filter(longitud &lt; 20 & ancho &lt; 10) |&gt;\n  ggplot() +\n    geom_density(aes(x = longitud, y = ..density..), fill = \"#9999ff\", color = \"#9999ff\") +\n      geom_label(aes(x = 1, y = .1, label = \"Longitud\")) +\n    geom_density(aes(x = ancho, y = -..density..), fill = \"#77eeaa\", color = \"#77eeaa\") +\n      geom_label(aes(x = 4.5, y = -.2, label = \"Ancho\")) + xlab('Medida en cm')"
+    "text": "Density plot\n\nggplot(filtrados) +\n  geom_density(aes(x = longitud, y = after_stat(density)), fill = \"#9999ff\",\n               color = \"#9999ff\") +\n  annotate(\"text\", x = 5, y = .1, label = \"Longitud\") +\n  geom_density(aes(x = ancho, y = -after_stat(density)), fill = \"#77eeaa\",\n               color = \"#77eeaa\") +\n  annotate(\"text\", x = 2.5, y = -.2, label = \"Ancho\") + xlab('Medida en cm')"
   },
   {
     "objectID": "1-intro-R/index.html#gráficos-de-dispersión",
@@ -217,38 +203,171 @@
     "text": "Gráficos de dispersión\n\nggplot(data = hojas) +\n  geom_point(mapping = aes(x = longitud, y = ancho, color = Científico))"
   },
   {
+    "objectID": "1-intro-R/index.html#limpieza-de-datos",
+    "href": "1-intro-R/index.html#limpieza-de-datos",
+    "title": "Análisis de datos en R",
+    "section": "Limpieza de datos",
+    "text": "Limpieza de datos\n\n\n\n# Unificar los datos inconsistentes\nhojas &lt;- hojas |&gt; mutate(across('Herbivoría', str_replace, 'Si|si|Sì', 'Sí'))\n\n# Generar nueva columna 'ra' (relación de aspecto)\nhojas &lt;- hojas |&gt; mutate(ra = longitud/ancho)"
+  },
+  {
     "objectID": "1-intro-R/index.html#todavía-más-gráficos",
     "href": "1-intro-R/index.html#todavía-más-gráficos",
     "title": "Análisis de datos en R",
     "section": "Todavía más gráficos",
-    "text": "Todavía más gráficos\nThe R Graph Gallery\n\n\n\nAnálisis de datos. Juan Camilo Arboleda Rivera, UdeA, 2024."
+    "text": "Todavía más gráficos\nThe R Graph Gallery"
   },
   {
-    "objectID": "material-adicional/ideas.html",
-    "href": "material-adicional/ideas.html",
-    "title": "ANOVA",
-    "section": "",
-    "text": "Medir rasgos de plantas, por ejemplo largo y ancho de las hojas, diámetro a la altura del pecho, si son Agavaceas el número de dientes en las hojas.\nEn palmeras distancias entre nudos y tal vez correlacionarlo con su altura o especie.\nTal vez estudiar una sola especie y ver si condiciones del microclima pueden relacionarse con el largo de sus hojas o su ancho o cosas así.\nPor ejemplo, se podría estudiar Tradescantia zebrina, que hay muchas por toda la universidad.\n¿Mirar asimetría en las hojas quizás? ¿Grosor de la hoja?\nConjuntos de datos de plantas https://experts.illinois.edu/en/organisations/plant-biology/datasets/\nTener alguna variable categórica, por ejemplo tamaño de la planta, o tipo de planta o aguna cosa así.\n\nANOVA\nHacer una ANOVA para ver si hay diferencias entre las personas que hicieron la medición.\nCometer errores a propósito al insertar los datos para luego hablar sobre los outliers.\n\n\n2024-06-12\nForcats es un paquete para trabajar con factores mejor que en R base. Las variables categóricas la idea es que sean de tipo de dato “Factor”.\nTidytuesday publican datos y la gente los analiza."
+    "objectID": "1-intro-R/index.html#seleccionar-columnas",
+    "href": "1-intro-R/index.html#seleccionar-columnas",
+    "title": "Análisis de datos en R",
+    "section": "Seleccionar columnas",
+    "text": "Seleccionar columnas\n\n\n\nhojas |&gt; select(longitud)\n\n# A tibble: 300 × 1\n   longitud\n      &lt;dbl&gt;\n 1     8.11\n 2     8.61\n 3     7.11\n 4     7.2 \n 5     6.40\n 6     7.94\n 7     7.32\n 8     6.9 \n 9     7.06\n10     7.97\n# ℹ 290 more rows"
   },
   {
-    "objectID": "material-adicional/recursos-adicionales.html",
-    "href": "material-adicional/recursos-adicionales.html",
+    "objectID": "1-intro-R/index.html#agrupar-datos",
+    "href": "1-intro-R/index.html#agrupar-datos",
+    "title": "Análisis de datos en R",
+    "section": "Agrupar datos",
+    "text": "Agrupar datos\n\n\n\nhojas |&gt; group_by(Herbivoría)\n\n# A tibble: 300 × 6\n# Groups:   Herbivoría [3]\n   id_planta longitud ancho Herbivoría Científico    ra\n   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;\n 1 JAJT1         8.11  3.15 &lt;NA&gt;       Jose Tobón 2.57 \n 2 JAJT1         8.61  2.13 &lt;NA&gt;       Jose Tobón 4.04 \n 3 JAJT1         7.11  2.5  &lt;NA&gt;       Jose Tobón 2.84 \n 4 JAJT1         7.2   2.88 &lt;NA&gt;       Jose Tobón 2.5  \n 5 JAJT1         6.40  2.88 &lt;NA&gt;       Jose Tobón 2.22 \n 6 JAJT1         7.94 24.6  &lt;NA&gt;       Jose Tobón 0.323\n 7 JAJT1         7.32  2.24 &lt;NA&gt;       Jose Tobón 3.27 \n 8 JAJT1         6.9   2.93 &lt;NA&gt;       Jose Tobón 2.35 \n 9 JAJT1         7.06  2.96 &lt;NA&gt;       Jose Tobón 2.38 \n10 JAJT1         7.97  2.64 &lt;NA&gt;       Jose Tobón 3.02 \n# ℹ 290 more rows\n\n\n\nUsar la función group_by por sí sola no hace mucho, es útil porque las operaciones subsecuentes se realizarán por grupo."
+  },
+  {
+    "objectID": "1-intro-R/index.html#agrupar-datos-1",
+    "href": "1-intro-R/index.html#agrupar-datos-1",
+    "title": "Análisis de datos en R",
+    "section": "Agrupar datos",
+    "text": "Agrupar datos\n\n\n\nhojas |&gt;\n  group_by(Herbivoría) |&gt;\n  summarize(\n    lon_promedio = mean(longitud),\n    sd_lon = sd(longitud),\n    n = n() # Número de filas en cada grupo\n  )\n\n# A tibble: 3 × 4\n  Herbivoría lon_promedio sd_lon     n\n  &lt;chr&gt;             &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;\n1 No                 5.94  5.83    186\n2 Sí                 5.80  1.73    104\n3 &lt;NA&gt;               7.46  0.671    10\n\n\n\n\nEjercicio\n¿Cuál es el ancho promedio de las hojas para cada persona?"
+  },
+  {
+    "objectID": "1-intro-R/index.html#desagrupar-datos",
+    "href": "1-intro-R/index.html#desagrupar-datos",
+    "title": "Análisis de datos en R",
+    "section": "Desagrupar datos",
+    "text": "Desagrupar datos\n\n\n\nhojas |&gt;\n  ungroup()\n\n# A tibble: 300 × 6\n   id_planta longitud ancho Herbivoría Científico    ra\n   &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;\n 1 JAJT1         8.11  3.15 &lt;NA&gt;       Jose Tobón 2.57 \n 2 JAJT1         8.61  2.13 &lt;NA&gt;       Jose Tobón 4.04 \n 3 JAJT1         7.11  2.5  &lt;NA&gt;       Jose Tobón 2.84 \n 4 JAJT1         7.2   2.88 &lt;NA&gt;       Jose Tobón 2.5  \n 5 JAJT1         6.40  2.88 &lt;NA&gt;       Jose Tobón 2.22 \n 6 JAJT1         7.94 24.6  &lt;NA&gt;       Jose Tobón 0.323\n 7 JAJT1         7.32  2.24 &lt;NA&gt;       Jose Tobón 3.27 \n 8 JAJT1         6.9   2.93 &lt;NA&gt;       Jose Tobón 2.35 \n 9 JAJT1         7.06  2.96 &lt;NA&gt;       Jose Tobón 2.38 \n10 JAJT1         7.97  2.64 &lt;NA&gt;       Jose Tobón 3.02 \n# ℹ 290 more rows\n\n\n\n\n\nAnálisis de datos. Juan Camilo Arboleda Rivera, UdeA, 2024."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Análisis de datos",
     "section": "",
-    "text": "Libro Python for Data Analysis\nProgramación en R\n\nLibro principal el mejor de todos los tiempos: - R4 Data Science\n\nAdvanced R, de Wickham\nHappy Git de Jennifer Bryan\nrenv\ntidystats: Conjunto de paquetes para hacer pruebas estadísticas.\neasystats: Más cosas de estadística muy chévere.\nExtensiones asombrosas para ggplot2\nGalería con gráficos muy bonitos\n\n\n\nCapas de ggplot2\n\n\n\nBuscar más información sobre estas capas de ggplot2 y cómo funcionan. En esta página hay más información.\nBuscar también “la gramática de los gráficos”.\npkgdown: Sistema para generar paquetes de R.\nEstructura de un proyecto de Biología Computacional\nMuy buen tutorial sobre R en español\nMaterial para instructores"
+    "text": "En esta página encontrarás el material del minicurso de análisis de datos con R y Python."
   },
   {
-    "objectID": "1-intro-R/recursos.html",
-    "href": "1-intro-R/recursos.html",
+    "objectID": "index.html#diapositivas",
+    "href": "index.html#diapositivas",
     "title": "Análisis de datos",
-    "section": "",
-    "text": "Versión en español del curso https://tereom.github.io/est_computacional/01-Intro-R/R_analisis_datos_visualizacion https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/ https://bookdown.org/gaston_becerra/curso-intro-r/analisis-de-datos-con-r.html https://rpubs.com/Andersson_Vargas/1120758 https://swcarpentry.github.io/r-novice-gapminder-es/ https://datos.gob.es/es/noticia/open-access-la-verde-la-dorada-y-la-hibrida"
+    "section": "Diapositivas",
+    "text": "Diapositivas\n\nIntroducción\nAnálisis de datos en R\nEstadística"
   },
   {
-    "objectID": "0-intro/index.html#altura-del-árbol",
-    "href": "0-intro/index.html#altura-del-árbol",
-    "title": "Análisis de datos",
-    "section": "Altura del árbol",
-    "text": "Altura del árbol\n\nhttp://wiki.awf.forst.uni-goettingen.de/wiki/index.php/The_trigonometric_principle"
+    "objectID": "2-estadística/index.html#población-vs.-muestra",
+    "href": "2-estadística/index.html#población-vs.-muestra",
+    "title": "Análisis de datos en R",
+    "section": "Población vs. muestra",
+    "text": "Población vs. muestra"
+  },
+  {
+    "objectID": "2-estadística/index.html#qué-es-ser-normal",
+    "href": "2-estadística/index.html#qué-es-ser-normal",
+    "title": "Análisis de datos en R",
+    "section": "¿Qué es ser normal?",
+    "text": "¿Qué es ser normal?"
+  },
+  {
+    "objectID": "2-estadística/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
+    "href": "2-estadística/index.html#son-tus-datos-normales-o-les-gusta-madrugar",
+    "title": "Análisis de datos en R",
+    "section": "¿Son tus datos normales, o les gusta madrugar?",
+    "text": "¿Son tus datos normales, o les gusta madrugar?\n\nhojas |&gt; shapiro_test(longitud)"
+  },
+  {
+    "objectID": "2-estadística/index.html#outliers-datos-atípicos",
+    "href": "2-estadística/index.html#outliers-datos-atípicos",
+    "title": "Análisis de datos en R",
+    "section": "Outliers (Datos atípicos)",
+    "text": "Outliers (Datos atípicos)"
+  },
+  {
+    "objectID": "2-estadística/index.html#prueba-t-de-student",
+    "href": "2-estadística/index.html#prueba-t-de-student",
+    "title": "Análisis de datos en R",
+    "section": "Prueba t de Student",
+    "text": "Prueba t de Student\n\nSirve para saber si dos medias son diferentes.\n\n\n\n\n\n\nExiste gracias a la cerveza."
+  },
+  {
+    "objectID": "2-estadística/index.html#supuestos-para-hacer-una-prueba-t-de-student",
+    "href": "2-estadística/index.html#supuestos-para-hacer-una-prueba-t-de-student",
+    "title": "Análisis de datos en R",
+    "section": "Supuestos para hacer una prueba t de Student",
+    "text": "Supuestos para hacer una prueba t de Student\n\nIndependencia de los datos.\nSi las muestras de cada grupo son pequeñas, estas deben satisfacer normalidad. Si son grandes (n &gt; 30) el TLC asegura que se pueda usar la prueba t de Student.\nHomocedasticidad.\nNo deberían haber outliers."
+  },
+  {
+    "objectID": "2-estadística/index.html#prueba-t-de-student-1",
+    "href": "2-estadística/index.html#prueba-t-de-student-1",
+    "title": "Análisis de datos en R",
+    "section": "Prueba t de Student",
+    "text": "Prueba t de Student\n\n\n¿Hay diferencias estadísticamente significativas entre las longitudes de las hojas con y sin herbivoría?\nPrimero verifiquemos los supuestos sobre los datos."
+  },
+  {
+    "objectID": "2-estadística/index.html#test-de-levene-para-homocedasticidad",
+    "href": "2-estadística/index.html#test-de-levene-para-homocedasticidad",
+    "title": "Análisis de datos en R",
+    "section": "Test de Levene para homocedasticidad",
+    "text": "Test de Levene para homocedasticidad\nVarianza: \\[\n\\sigma^2 = \\dfrac{\\sum (x - \\bar{x})^2}{N}\n\\]\n\nTest de Levene en R:\n\nlibrary(car)\nleveneTest(y = hojas$longitud, group = hojas$Herbivoría)\n\nLevene's Test for Homogeneity of Variance (center = median)\n       Df F value   Pr(&gt;F)   \ngroup   2  4.7381 0.009454 **\n      286                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+  },
+  {
+    "objectID": "2-estadística/index.html#prueba-t-de-student-2",
+    "href": "2-estadística/index.html#prueba-t-de-student-2",
+    "title": "Análisis de datos en R",
+    "section": "Prueba t de Student",
+    "text": "Prueba t de Student\n\n\nt.test(herb_si, herb_no, var.equal = FALSE)\n\nherb_si y herb_no deben ser vectores con las longitudes de las hojas con y sin herbivoría respectivamente.\n¿Cómo generamos estos vectores?"
+  },
+  {
+    "objectID": "2-estadística/index.html#el-valor-p",
+    "href": "2-estadística/index.html#el-valor-p",
+    "title": "Análisis de datos en R",
+    "section": "El valor p",
+    "text": "El valor p\nPuede interpretarse de varias formas:\n\nProbabilidad de que los resultados obtenidos se deban al azar.\nProbabilidad de obtener los resultados observados, asumiendo que la hipótesis nula es cierta.\nProbabilidad de rechazar la hipótesis nula siendo esta cierta."
+  },
+  {
+    "objectID": "2-estadística/index.html#hipótesis-nula-e-hipótesis-alternativa",
+    "href": "2-estadística/index.html#hipótesis-nula-e-hipótesis-alternativa",
+    "title": "Análisis de datos en R",
+    "section": "Hipótesis nula e Hipótesis alternativa",
+    "text": "Hipótesis nula e Hipótesis alternativa"
+  },
+  {
+    "objectID": "2-estadística/index.html#anova",
+    "href": "2-estadística/index.html#anova",
+    "title": "Análisis de datos en R",
+    "section": "ANOVA",
+    "text": "ANOVA\nANalysis Of VAriance, Análisis de Varianza\n\nComo una prueba t de Student pero cuando se comparan las medias entre más de dos grupos."
+  },
+  {
+    "objectID": "2-estadística/index.html#supuestos-para-hacer-una-anova",
+    "href": "2-estadística/index.html#supuestos-para-hacer-una-anova",
+    "title": "Análisis de datos en R",
+    "section": "Supuestos para hacer una ANOVA",
+    "text": "Supuestos para hacer una ANOVA\n\nIndependencia de los datos.\nSi las muestras de cada grupo son pequeñas, estas deben satisfacer normalidad. Si son grandes (n &gt; 30) el TLC asegura que se pueda usar la ANOVA.\nHomocedasticidad.\nNo deberían haber outliers."
+  },
+  {
+    "objectID": "2-estadística/index.html#existirán-diferencias-en-el-ancho-promedio-de-las-hojas-dependiendo-de-quién-las-midió",
+    "href": "2-estadística/index.html#existirán-diferencias-en-el-ancho-promedio-de-las-hojas-dependiendo-de-quién-las-midió",
+    "title": "Análisis de datos en R",
+    "section": "¿Existirán diferencias en el ancho promedio de las hojas dependiendo de quién las midió?",
+    "text": "¿Existirán diferencias en el ancho promedio de las hojas dependiendo de quién las midió?"
+  },
+  {
+    "objectID": "2-estadística/index.html#anova-en-r",
+    "href": "2-estadística/index.html#anova-en-r",
+    "title": "Análisis de datos en R",
+    "section": "ANOVA en R",
+    "text": "ANOVA en R\n\nres_anova &lt;- aov(ancho ~ Científico, data = hojas)\n\n# Ver normalidad de los residuales\nggplot(hojas, aes(x = res_anova$residuals)) +\n  geom_histogram() + xlab('Residuales')"
+  },
+  {
+    "objectID": "2-estadística/index.html#bibliografía",
+    "href": "2-estadística/index.html#bibliografía",
+    "title": "Análisis de datos en R",
+    "section": "Bibliografía",
+    "text": "Bibliografía"
   }
 ]

@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/2-estadística/index.html</loc>
-    <lastmod>2024-06-26T20:31:35.794Z</lastmod>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/2-estadística/recursos.html</loc>
+    <lastmod>2024-07-21T16:57:48.985Z</lastmod>
   </url>
   <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/index.html</loc>
-    <lastmod>2024-06-26T20:35:20.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/1-intro-R/index.html</loc>
-    <lastmod>2024-06-28T22:51:58.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/material-adicional/ideas.html</loc>
-    <lastmod>2024-06-12T20:09:38.709Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/material-adicional/recursos-adicionales.html</loc>
-    <lastmod>2024-06-20T05:01:45.014Z</lastmod>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/0-intro/index.html</loc>
+    <lastmod>2024-06-13T04:33:26.726Z</lastmod>
   </url>
   <url>
     <loc>https://Biologia-Computacional.github.io/data-analysis/1-intro-R/recursos.html</loc>
     <lastmod>2024-06-13T04:33:26.726Z</lastmod>
   </url>
   <url>
-    <loc>https://Biologia-Computacional.github.io/data-analysis/0-intro/index.html</loc>
-    <lastmod>2024-06-13T04:33:26.726Z</lastmod>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/material-adicional/recursos-adicionales.html</loc>
+    <lastmod>2024-06-20T05:01:45.014Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/material-adicional/ideas.html</loc>
+    <lastmod>2024-06-12T20:09:38.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/1-intro-R/index.html</loc>
+    <lastmod>2024-07-21T13:08:50.902Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/index.html</loc>
+    <lastmod>2024-06-26T20:35:20.592Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biologia-Computacional.github.io/data-analysis/2-estadística/index.html</loc>
+    <lastmod>2024-07-28T14:25:11.814Z</lastmod>
   </url>
 </urlset>
